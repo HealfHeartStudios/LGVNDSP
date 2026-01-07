@@ -51,9 +51,10 @@ label start:
     #jump to send to the tech demo, should be commented out for final build
     #jump Beta
     scene black with fade
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2025 Dec 19."
-    g "That being said nearly everything is not final"
-    l "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a secret project!"
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 7."
+    g "This update Moved the project to github to speed up development, if you see any new bugs this is probably why"
+    l "That being said nearly everything is not final"
+    g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a secret project!"
     l "If you all behave maybe I'll give you each a little something special ~"
 label Intro:
 
