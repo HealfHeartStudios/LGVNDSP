@@ -2,7 +2,6 @@
 errors listed below, and try again.
 
 
-
 File "game/script.rpy", line 822: expected 'label_name_declare' not found.
     label
          ^
