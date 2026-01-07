@@ -47,16 +47,19 @@ transform moveleft:
 #Game starts here.
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label start:
+    #initalize the normal event flag, this should be done before and after every time it is used just incase.
     $ event = 0
     #jump test
     #jump to send to the tech demo, should be commented out for final build
     #jump Beta
     scene black with fade
+
     l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 7."
     g "This update Moved the project to github to speed up development, if you see any new bugs this is probably why"
     l "That being said nearly everything is not final"
     g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a secret project!"
     l "If you all behave maybe I'll give you each a little something special ~"
+
 label Intro:
 
     scene bbb outside with fade
@@ -243,6 +246,7 @@ label intro2:
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label c2a1:
     $ event = 0
+    #you dont drink
     nar "I wouldn't dare touch that concoction, there's no telling what Sakura put in there."
     nar "That's totally the reason why... not because I'm still upset or anything."
     jump meetingthegirls
@@ -702,7 +706,7 @@ label bbbl5:
     nar ""
     #continue coding here
 
-
+    #bouncing CG
     show l cg 1 3 with dissolve
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
