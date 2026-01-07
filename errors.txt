@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 822: expected 'label_name_declare' not found.
+    label
+         ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Thu Dec 11 15:43:44 2025

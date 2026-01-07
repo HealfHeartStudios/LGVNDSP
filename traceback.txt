@@ -1,0 +1,23 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 334, in script
+    jump beta
+renpy.script.LabelNotFound: could not find label 'beta'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 334, in script
+    jump beta
+  File "renpy/ast.py", line 1928, in execute
+    rv = renpy.game.script.lookup(target)
+         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "renpy/script.py", line 1161, in lookup
+    raise LabelNotFound(original)
+renpy.script.LabelNotFound: could not find label 'beta'.
+
+Windows-10-10.0.19045-SP0 AMD64
+Ren'Py 8.4.1.25072401
+LGVNDSP 0.1
+Mon Nov 24 02:13:42 2025
