@@ -382,7 +382,7 @@ label namecheckcode:
         jump memoname
 
     if povname in ["MazHazPazzaz"]:
-        jump memoname
+        jump mazname
 
     if povname in ["mlzrt"]:
         jump beta
@@ -890,6 +890,7 @@ label bbbs2:
     label mazname:
         l "Maz! It's been a while!"
         l "How are Willow and Morgan? Still hot?"
+        jump sohedoeshaveaname
     #Name Checker end
 #
 #
