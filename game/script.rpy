@@ -344,7 +344,7 @@ label namecheckcode:
     if not povname:
         $ povname = "The Slayer Of Wine Glasses"  
 
-    if povname in [ "MKscorp", "Iffy", "Hatchet", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "MazHazPazzaz", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
+    if povname in [ "MKscorp", "Iffy", "Hatchet", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
         jump friendlyname
 
 
@@ -379,6 +379,9 @@ label namecheckcode:
         jump geniename
 
     if povname in ["Shiori Fujisaki","Monika","Yuri","Natsuki","Sayori"]:
+        jump memoname
+
+    if povname in ["MazHazPazzaz"]:
         jump memoname
 
     if povname in ["mlzrt"]:
@@ -883,6 +886,10 @@ label bbbs2:
         l "We have got to catch up with each other more often!"
         l "Nice of you to visit me at work for a change!~"
         jump sohedoeshaveaname
+
+    label mazname:
+        l "Maz! It's been a while!"
+        l "How are Willow and Morgan? Still hot?"
     #Name Checker end
 #
 #
