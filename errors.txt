@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 822: expected 'label_name_declare' not found.
-    label
-         ^
+File "game/script.rpy", line 791: expected statement.
+    nar
+        ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Thu Dec 11 15:43:44 2025
+Wed Jan 14 02:39:28 2026

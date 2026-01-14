@@ -54,9 +54,9 @@ label start:
     #jump Beta
     scene black with fade
 
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 7."
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 14."
     g "This update Moved the project to github to speed up development, if you see any new bugs this is probably why"
-    l "That being said nearly everything is not final"
+    l "Saki's route now has more dialogue to read but no graphic data has been added yet. you can read through it but it won't be pretty. That being said nearly everything is not final."
     g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a secret project!"
     l "If you all behave maybe I'll give you each a little something special ~"
 
@@ -344,7 +344,7 @@ label namecheckcode:
     if not povname:
         $ povname = "The Slayer Of Wine Glasses"  
 
-    if povname in [ "MKscorp", "Iffy", "Hatchet", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
+    if povname in [ "MKscorp", "Iffy", "Hatchet", "Reese", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
         jump friendlyname
 
 
@@ -388,10 +388,9 @@ label namecheckcode:
         jump beta
 
     pov "My name is [povname]."
+
 label sohedoeshaveaname:
-
-    
-
+    #this code checks which girl likes the player more at the moment based on actions up to this point.
     if ghosty_love >= lara_love:
         gf "[povname]? That's a cute name, I'd bet you'd love to hear me moan it~"
         hide blara
@@ -737,12 +736,12 @@ label bbbs:
     nar "Lara seems to have recovered well, she's back to smiling but her words have done anything but calm me, but before I can think too much Ghosty's voice brings me back to reality."
     gf "Don't be scared, love. I will take very good care of you."
     nar "The flame eyed performer licks her teeth as she smiles"
-    pov "I feel like I am walking into a trap."
-    gf "You wouldn't be here if you weren't already looking for a little fun."
-    gf "I am just adding a touch of something... more exciting."
-    gf "Don't you want to let your imagination become reality?"
-    nar "Saki's eyes glisten as she stares at me, its almost like shes pleading. She's obviously very experienced in this kind of thing"
-    
+    pov "I feel like I'm walking into a trap."
+    gf "You wouldn't be here if you weren't already looking for a little fun. "
+    gf "I am just adding a touch of something... more exciting. Don't you want to let your imagination become reality?"
+    nar "Saki's eyes glisten as she stares at me, its almost like shes pleading. She's obviously very experienced in this kind of thing."
+    nar "the character she's playing feels so real. It's hard to believe she really isn't some kind of sex demoness."
+
     menu:
         "Don't you want to let your imagination become reality?"
 
@@ -759,10 +758,10 @@ label bbbs:
         "How much of my imagination, exactly?":
             $ ghosty_love = ghosty_love + 2
             pov "How much of my imagination, exactly?"
-            nar "Part of me was afraid to find out the answer to that question..."
+            nar "Part of me was afraid to find out the answer..."
             gf "Well, that's honestly up to you, love~"
-            gf "You could let your mind run wild."
-            l "Saki is very good at making dreams come true"
+            gf "You could let your mind run wild for all I care. I'm truly up for anything that dirty little brain can think of."
+            l "Saki is very good at making dreams come true."
             l_whisper "I wish she would do the same for me..."
             gf "So tell me.. what is your wildest fantasy?"
             $ fantasy = renpy.input("So tell me.. what is your wildest fantasy?", length=45)
@@ -786,17 +785,18 @@ label bbbs2:
     gf "Great!"
     nar "Before I could even finish she was already pulling a key out from between the cleavage of her bunny suit."
     l "You.. you just have that in there..?!"
-    gf "Duh! A special room key can't just be left out anywhere!~ Do you have the rest of the shift covered or should I call someone to come help?"
+    gf "Duh! A key to a room this special can not just be left out anywhere!~ Do you have the rest of the shift covered or should I call someone to come help?"
     l "Oh, Uhm no I'll be fine, Go have your fun!~"
     gf "Thanks Red!~ I'll pay you back later, Promise!~"
-    l "It's okay Saki Just don't go too hard on him..."
-    nar "Lara's words come out with an emotion I can't quite place, is she sad I didn't pick her or... worried?"
-    gf "I can't make any promises~ Follow me, love.~"
+    nar "The way the two are talking this seems to happen pretty often."
+    l "It's okay Saki Just don't be too rough with them..."
+    nar "Lara's words come out with an emotion I can't quite place, is she just sad I didn't pick her or... Actually worried?"
+    gf "I can't make any promises~ Now, Follow me love.~"
     nar "Saki's words are followed with a wink that causes my heart to race, its like she has me under a spell with how every little thing she does is just so... perfect."
-    nar "Without further warning Saki grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
-    nar "As I followed behind her, I could feel my heart pounding in my chest. I still have no idea what to expect from this..."
-    nar "Before I know it Saki has opened the door to the room where all my questions would hopefully soon be answered"
-    gf "Make yourself comfortable."
+    nar "As my mind continues its attempt to catch up with everything that's going on, Saki grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
+    nar "As I followed behind her, the costumes tail seeming to sway in slow motion as we climed the stairs to the second floor. I can hear my heart pounding in my chest louder with each step."
+    nar "Before I know it Saki has opened the door to the room where all my anxiety will hopefully soon be replaced with pleasure."
+    gf "Make yourself comfortable, Hun."
     nar "If the main floor just 'impressed' me with how classy it was, the 'private room' has nearly given me a stroke. The room has a bed, a couch, a minifridge, a tv, tables and chairs, It's like a mini apartment."
     nar "This is just a room for private shows? It's amazing."
     gf "Oh? I mean it's nothing special. You should see the rooms back at the mansion."
@@ -810,7 +810,7 @@ label bbbs2:
     pov "I guess I just didn't expect this much attention. Especially so quickly"
     gf "But it's nice, isn't it? Besides, Red obviously saw something special in you and she has an AMAZING eye for this kind of thing."
     gf "Plus, I love making guests feel welcome~"
-    nar "without further warning Saki Places her hands on my chest causing a soft shiver to run through my body"
+    nar "without further warning Saki Places her hands on my chest causing a soft shiver to run through my body. I swear she's like a living aphrodisiac."
     gf "Now... How about we get comfortable?"
     nar "Saki pushes into me softly, as I step back I bump into the bed sat in the corner of the room"
     gf "Go ahead, take a seat love.~"
