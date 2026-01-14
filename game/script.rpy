@@ -807,7 +807,15 @@ label bbbs2:
     gf "Now... How about we get comfortable?"
     nar "Saki pushes into me softly, as I step back I bump into the bed sat in the corner of the room"
     gf "Go ahead, take a seat love.~"
-
+    nar "I could feel the heat of her body against mine. The sensation making my mind blur for a moment before I snapped back."
+    nar "I did as told and sat on the bed, my palms awkwardly fell to my sides on the mattress."
+    pov "Um.. I thought this place was about 'look don't touch?'"
+    gf "Mmm.."
+    nar "There was a mischevious glint in Saki's eyes as she let my question hang in the air for a moment."
+    gf "You're right.. but I can make exceptions."
+    gf "I want to give you a once in a life time expereience after all~"
+    nar "Without another thought Saki's body moved on to my lap. "
+    nar "I could barely form a sentence feeling Saki on top of me."
     # Lap CG pov
     nar "The programmer has a nap. Hold out! Programmer!"
 
