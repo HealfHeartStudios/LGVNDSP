@@ -55,11 +55,12 @@ label start:
     #jump Beta
     scene black with fade
 
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 14."
-    g "This update Moved the project to github to speed up development, if you see any new bugs this is probably why"
-    l "Saki's route now has more dialogue to read but no graphic data has been added yet. you can read through it but it won't be pretty. That being said nearly everything is not final."
-    g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a secret project!"
-    l "If you all behave maybe I'll give you each a little something special ~"
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 30th."
+    g "Since the last private build was released a lot of new writing and art has been added to the project."
+    l "'Saki's' route now has dialogue to read but the graphic data is not finished. you can read through it but it won't be pretty. That being said nearly everything is not final."
+    g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a private test build! Do not post SS or any content from these builds in public places."
+    l "If you all behave maybe I'll give you each a little something special when the final build comes along~"
+    g "Welcome to the Valentines private test build!"
 
 label Intro:
 
@@ -214,7 +215,7 @@ label intro2:
     nar "Sakura's words repeat in my head over and over."
     #Cg with both looking at each other!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1 with dissolve
-    nar "I just now laid eyes on these girls, I've not even spoken to them but I can't help but feel a little burned by the news I won't even get the chance."
+    nar "I literally just saw these girls and haven't even talked to them, but it still kind of burns knowing I don't have even a small shot at a conversation with them."
     nar "This club has so much going on but my eyes seem stuck on the center stage, I can see why they're part of the 'golden trio' of the club."
     nar "Every single movement they make feels like it was perfectly practiced, the show they're putting on is almost hypnotic."
     nar "I feel like I'm watching two goddesses at work."
@@ -227,14 +228,16 @@ label intro2:
     nar "Curse that stupid wine glass and it's ability to make me lose my concentration."
     #Cg with ghosty winking at camera lara looking at her worried!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1 3 with dissolve
-    nar "As I'm thinking of ways to attempt to hurt an innanimate objects feelings, the demon girl locks eyes with me."
+    nar "As I'm thinking of ways to attempt to hurt an innanimate objects feelings, are they... looking at me?"
+    nar "Before I can wonder too long, the demon girl locks eyes with me."
+    scene lg cg 1 4 with dissolve
     nar "Is she... calling me up to her?"
     nar "Sakura said she's the owners daughter right? Oh shit did I do something wrong???"
     nar "I can feel my anxiety well up once more, Maybe you're NOT supposed to stare? How could you manage that? Is it what I'm wearing? Is it not classy enough?"
     nar "Could she sense my hostility towards the top heavy liquid holder? (still working on those insults)"
     nar "Maybe she's not..."
     #ghosty annoyed...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    scene lg cg 1 4 with dissolve
+    scene lg cg 1 5 with dissolve
     nar "No, she one-hundered percent is."
     nar "Okay okay, it's best to not keep a lady waiting right? 'If This Be My Destiny' and all that. I just wish I had something to help calm my nerves..."
     menu:
@@ -279,12 +282,12 @@ label meetingthegirls:
 #
 #
 #
-#
+# ghosty test
 #
 #
 #
     if event == 1:
-        show ghosty test at right
+        show bghosty at right
         with dissolve 
 
         gu "You okay there love? You looked like you were about to choke. Leave the swallowing to the big girls."
@@ -300,7 +303,7 @@ label meetingthegirls:
         show blara smug at left
         with dissolve
         lu "Unless you ask her to."
-        show ghosty test at right
+        show bghosty at right
         with dissolve
         gf "I won't make any promises..."
         hide blara smug
@@ -567,7 +570,7 @@ label bbbl2:
     show blara pout at left
     with dissolve
 #how to hide characters and how to move character to center!!!
-    hide ghosty test with moveoutright
+    hide bghosty with moveoutright
     show blara pout at center
     with move
     nar "Without further warning Lara grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
@@ -727,13 +730,14 @@ label bbbl5:
     pov "Y-you are more than good enough for me."
     show l cg 1 3 with dissolve
     l "mmh~ I'm happy to hear you say that."
+    nar "Her soft moan sends a shock through my body, my voice feels like its caught in my throat. Every movement she makes is making it harder to think straight."
     l "you know, Maybe you could help me take this o-"
     ph "'Buh duh duh ding'"
     nar "Lara's eyes widen as she flips back to a seated position scrambling to pull her phone out of her uniform's top."
-    l "I s-sorry just uhm give me a minute I just uhm"
+    l "I s-sorry just uhm give me a minute I just uhm."
     l "I just need to check this notification real quick It's uhm really important then I'll mute my phone, Promise."
-    nar "as I watch her fidget with her phone it finally clicks in my brain "
-    pov ""
+    nar "as I watch her fidget with her phone it finally clicks in my brain."
+    pov " "
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
 
