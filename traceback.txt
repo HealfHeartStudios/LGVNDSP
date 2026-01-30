@@ -1,23 +1,33 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 334, in script
-    jump beta
-renpy.script.LabelNotFound: could not find label 'beta'.
+  File "game/script.rpy", line 483, in script
+    show blara worry at center with mov
+  File "game/script.rpy", line 483, in <module>
+    show blara worry at center with mov
+                                    ^^^
+NameError: name 'mov' is not defined. Did you mean: 'move'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 334, in script
-    jump beta
-  File "renpy/ast.py", line 1928, in execute
-    rv = renpy.game.script.lookup(target)
-         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
-  File "renpy/script.py", line 1161, in lookup
-    raise LabelNotFound(original)
-renpy.script.LabelNotFound: could not find label 'beta'.
+  File "game/script.rpy", line 483, in script
+    show blara worry at center with mov
+  File "renpy/ast.py", line 1577, in execute
+    paired = renpy.python.py_eval(self.paired)
+             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "game/script.rpy", line 483, in <module>
+    show blara worry at center with mov
+                                    ^^^
+NameError: name 'mov' is not defined. Did you mean: 'move'?
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 LGVNDSP 0.1
-Mon Nov 24 02:13:42 2025
+Thu Jan 29 18:50:29 2026

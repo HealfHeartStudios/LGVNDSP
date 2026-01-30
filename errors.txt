@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 791: expected statement.
-    nar
-        ^
+File "game/script.rpy", line 483: show statement expects a non-empty block.
+    show blara worry at center: with move
+                               ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Wed Jan 14 02:39:28 2026
+Thu Jan 29 18:53:15 2026

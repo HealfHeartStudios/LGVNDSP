@@ -27,6 +27,7 @@ define pov = Character("[povname]", color="#faf0f0")
 define fantasy = Character("[fantasy]", color="#faf0f0")
 #Defaualt PC before player chooses name for start
 define sta = Character("You", color="#faf0f0")
+define ph = Character("Phone", color="#faf0f0")
 #------------------------------------------------------------------------------------------------------------------------------------------------
 #affection scores and other flags
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -148,6 +149,8 @@ label intro2:
     nar "I fumble through the menu Sakura had laid at my table in between glances at the surrounding scenery, trying to take it all in slow to not overwhelm myself."
     nar "If it wasn't for the pole dancing and ... interesting noises, this actually wouldn't be a bad place for a date."
     nar "Speaking of the pole dancing..."
+
+    #Cg with both looking at each other!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1
     sta "I can see why this place is so popular."
     nar "I had read in some of the online reviews that this place had interesting theming but after seeing Sakura I had assumed they just meant Bunny girls."
@@ -209,6 +212,7 @@ label intro2:
     hide sak smug with dissolve
     sta "Thank you? I think?"
     nar "Sakura's words repeat in my head over and over."
+    #Cg with both looking at each other!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1 with dissolve
     nar "I just now laid eyes on these girls, I've not even spoken to them but I can't help but feel a little burned by the news I won't even get the chance."
     nar "This club has so much going on but my eyes seem stuck on the center stage, I can see why they're part of the 'golden trio' of the club."
@@ -217,17 +221,20 @@ label intro2:
     scene bbb bar with dissolve
     nar "I stare into the red liquid filling the glass, I'm honestly a little worried Sakura could have put something in this..."
     nar "But if she was that kind of person I doubt she could work in a high profile club."
-    scene lg cg 1 with dissolve
+    #Cg with eyes closed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    scene lg cg 1 2 with dissolve
     nar "As I look back to the stage, to my dissapointment the show seems to be ending."
     nar "Curse that stupid wine glass and it's ability to make me lose my concentration."
-    scene lg cg 1 2 with dissolve
+    #Cg with ghosty winking at camera lara looking at her worried!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    scene lg cg 1 3 with dissolve
     nar "As I'm thinking of ways to attempt to hurt an innanimate objects feelings, the demon girl locks eyes with me."
     nar "Is she... calling me up to her?"
     nar "Sakura said she's the owners daughter right? Oh shit did I do something wrong???"
     nar "I can feel my anxiety well up once more, Maybe you're NOT supposed to stare? How could you manage that? Is it what I'm wearing? Is it not classy enough?"
     nar "Could she sense my hostility towards the top heavy liquid holder? (still working on those insults)"
     nar "Maybe she's not..."
-    scene lg cg 1 3 with dissolve
+    #ghosty annoyed...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    scene lg cg 1 4 with dissolve
     nar "No, she one-hundered percent is."
     nar "Okay okay, it's best to not keep a lady waiting right? 'If This Be My Destiny' and all that. I just wish I had something to help calm my nerves..."
     menu:
@@ -246,7 +253,7 @@ label intro2:
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label c2a1:
     $ event = 0
-    #you dont drink
+    #you don't drink
     nar "I wouldn't dare touch that concoction, there's no telling what Sakura put in there."
     nar "That's totally the reason why... not because I'm still upset or anything."
     jump meetingthegirls
@@ -262,13 +269,20 @@ label c2a2:
 
     jump meetingthegirls   
 label meetingthegirls:
-    scene bbb stage
     nar "With a deep breath I stand up and walk to the center stage."
     nar "Each step gets more difficult, I feel more nervous now than I ever have before."
     nar "Before I know it, Destiny arrives."
+    scene bbb stage
 #------------------------------------------------------------------------------------------------------------------------------------------------
 # How to check an event flag / variables
 #------------------------------------------------------------------------------------------------------------------------------------------------
+#
+#
+#
+#
+#
+#
+#
     if event == 1:
         show ghosty test at right
         with dissolve 
@@ -281,12 +295,11 @@ label meetingthegirls:
     else:
         show blara at left
         with dissolve
-        with dissolve
         lu "You got up here quick, don't let Saki scare you~. She doesn't bite..."
         hide blara at left
         show blara smug at left
         with dissolve
-        lu "Unless you want her to."
+        lu "Unless you ask her to."
         show ghosty test at right
         with dissolve
         gf "I won't make any promises..."
@@ -372,9 +385,6 @@ label namecheckcode:
     if povname in ["Shikki"]:
         jump shikkiname
 
-    if povname in [ "Gaster"]:
-        jump end
-
     if povname in ["Genie"]:
         jump geniename
 
@@ -424,6 +434,7 @@ label sohedoeshaveaname:
     show blara pout at left
     with dissolve
     l_whisper "I-I mean I might of but I-"
+    #cg insert here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     gf "It's okay doll, they are pretty cute. And if people get to stare at us all night long I think you've earned to take a few looks yourself."
     gf "That being said, if red has interest in you I just KNOW you've got some potential so I'm curious."
     gf "Who do you find more attractive [povname]?"
@@ -445,7 +456,6 @@ label sohedoeshaveaname:
         "I can't deny the alure of a Demon girl, Saki is more my type.": 
             $ ghosty_love = ghosty_love + 2
             $ ghosty_date_count = ghosty_date_count + 1
-            
             jump bbbs
 
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -466,10 +476,13 @@ label bbbl:
     pov "N-no I mean you're really attractive too just... something about her."
     gf "You don't have to explain yourself love, Lara's got some impressive curves to her. I'm sure she would love to give you a better look at them~."
     l "W-w-wait... you're not joking right? I mean LOOK at her."
-    show blara worry at center with move
+    show blara worry at left
+    show blara worry at center
+    with dissolve
+    with move
     nar "Lara cups Saki's ample chest with her hands."
     hide blara worry
-    show blara shout at center
+    show blara shout at center 
     with dissolve
     l_shout "LOOK AT THESE."
     hide blara shout
@@ -705,11 +718,22 @@ label bbbl5:
 
     show l cg 1 2 with dissolve
     l "This is doing something for you isn't it?~"
-    nar ""
-    #continue coding here
-
-    #bouncing CG
+    nar "I wonder what gave me away first? My silence, the fact my face is burning up, or..."
+    l "It's okay to be shy, trust me It takes a while to get used to this kind of thing."
+    nar "Something about getting me flustered seems to have lit a fire inside Lara, it's like all the anxiety and fear she had building up inside her melted away."
+    pov "I mean I-I can't say it isn't"
+    l "aww, but you're not able to say it is? Am I not good enough for you?"
+    nar "Damnit she's good at this. for someone who's inexperienced she's doing a VERY good job."
+    pov "Y-you are more than good enough for me."
     show l cg 1 3 with dissolve
+    l "mmh~ I'm happy to hear you say that."
+    l "you know, Maybe you could help me take this o-"
+    ph "'Buh duh duh ding'"
+    nar "Lara's eyes widen as she flips back to a seated position scrambling to pull her phone out of her uniform's top."
+    l "I s-sorry just uhm give me a minute I just uhm"
+    l "I just need to check this notification real quick It's uhm really important then I'll mute my phone, Promise."
+    nar "as I watch her fidget with her phone it finally clicks in my brain "
+    pov ""
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
 
@@ -823,6 +847,8 @@ label bbbs2:
 
 #end the game and return player to title
     label end:
+
+    nar "thank you for play testing the demo <3"
     #this ends the game do not add anything after this point.
     return
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -891,11 +917,7 @@ label bbbs2:
         l "Maz! It's been a while!"
         l "How are Willow and Morgan? Still hot?"
         jump sohedoeshaveaname
-    #Name Checker end
-#
-#
-#
-
+    #Name Ch
 
 
 
@@ -1042,4 +1064,4 @@ label bbbs2:
         l "..."
 
         l "Nice try. Don't you think that might get a little confusing?"
-        jump Beta
+        jump passbeta

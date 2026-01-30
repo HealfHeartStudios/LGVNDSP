@@ -7,18 +7,9 @@
 
 ## Basics ######################################################################
 
-## A human-readable name of the game. This is used to set the default window
-## title, and shows up in the interface and error reports.
-##
-## The _() surrounding the string marks it as eligible for translation.
-
-define config.name = _("LGVNDSP")
-
-
-## Determines if the title given above is shown on the main menu screen. Set
-## this to False to hide the title.
-
-define gui.show_name = True
+define config.name = _("Lara & Ghosty")
+## this is set to False to hide the title from the title screen
+define gui.show_name = False
 
 
 ## The version of the game.
