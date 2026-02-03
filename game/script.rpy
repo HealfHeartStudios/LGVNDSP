@@ -45,6 +45,13 @@ transform moveright:
 transform moveleft:
     linear 0.4 xpos 0.1
 #------------------------------------------------------------------------------------------------------------------------------------------------
+#Logo splash. Disable while testing 
+#------------------------------------------------------------------------------------------------------------------------------------------------
+label splashscreen:
+    $ renpy.movie_cutscene("images/logo.webm")
+    return
+
+#------------------------------------------------------------------------------------------------------------------------------------------------
 #Game starts here.
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label start:
@@ -55,9 +62,9 @@ label start:
     #jump Beta
     scene black with fade
 
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 30th."
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Feb 3rd."
     g "Since the last private build was released a lot of new writing and art has been added to the project."
-    l "'Saki's' route now has dialogue to read but the graphic data is not finished. you can read through it but it won't be pretty. That being said nearly everything is not final."
+    l "Both First dates now have nearly finished dialogue to read but the graphic data is not finished. That being said nearly everything is not final."
     g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a private test build! Do not post SS or any content from these builds in public places."
     l "If you all behave maybe I'll give you each a little something special when the final build comes along~"
     g "Welcome to the Valentines private test build!"
@@ -437,7 +444,6 @@ label sohedoeshaveaname:
     show blara pout at left
     with dissolve
     l_whisper "I-I mean I might of but I-"
-    #cg insert here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     gf "It's okay doll, they are pretty cute. And if people get to stare at us all night long I think you've earned to take a few looks yourself."
     gf "That being said, if red has interest in you I just KNOW you've got some potential so I'm curious."
     gf "Who do you find more attractive [povname]?"
@@ -573,8 +579,9 @@ label bbbl2:
     hide bghosty with moveoutright
     show blara pout at center
     with move
-    nar "Without further warning Lara grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
     scene bbb stairs with dissolve
+    nar "Without further warning Lara grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
+    scene bbb stairs2 with dissolve
     nar "As she unlocks the door to the private room upstairs I can hear her breath becoming more heavy. Maybe I missread the conversation and Saki really was getting under her skin?"
 #LC1
     menu:

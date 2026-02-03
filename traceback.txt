@@ -1,33 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 483, in script
-    show blara worry at center with mov
-  File "game/script.rpy", line 483, in <module>
-    show blara worry at center with mov
-                                    ^^^
-NameError: name 'mov' is not defined. Did you mean: 'move'?
+  File "game/script.rpy", line 52, in script
+    with pause(7)
+  File "game/script.rpy", line 52, in <module>
+    with pause(7)
+         ^^^^^   
+NameError: name 'pause' is not defined. Did you mean: 'Pause'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 483, in script
-    show blara worry at center with mov
-  File "renpy/ast.py", line 1577, in execute
-    paired = renpy.python.py_eval(self.paired)
-             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "renpy/common/00start.rpy", line 244, in script call
+    call _splashscreen from _call_splashscreen_1
+  File "game/script.rpy", line 52, in script
+    with pause(7)
+  File "renpy/ast.py", line 1574, in execute
+    trans = renpy.python.py_eval(self.expr)
+            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 483, in <module>
-    show blara worry at center with mov
-                                    ^^^
-NameError: name 'mov' is not defined. Did you mean: 'move'?
+  File "game/script.rpy", line 52, in <module>
+    with pause(7)
+         ^^^^^   
+NameError: name 'pause' is not defined. Did you mean: 'Pause'?
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
-LGVNDSP 0.1
-Thu Jan 29 18:50:29 2026
+Lara & Ghosty 0.1
+Tue Feb  3 01:42:49 2026
