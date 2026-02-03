@@ -1,5 +1,5 @@
 ﻿# Code Project Start Date Nov 8 2025
-#dig in butt
+# This is a github test 2
 #------------------------------------------------------------------------------------------------------------------------------------------------
 # Character definitions. setting var name, screen name, name color.
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -27,6 +27,7 @@ define pov = Character("[povname]", color="#faf0f0")
 define fantasy = Character("[fantasy]", color="#faf0f0")
 #Defaualt PC before player chooses name for start
 define sta = Character("You", color="#faf0f0")
+define ph = Character("Phone", color="#faf0f0")
 #------------------------------------------------------------------------------------------------------------------------------------------------
 #affection scores and other flags
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -47,16 +48,20 @@ transform moveleft:
 #Game starts here.
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label start:
+    #initalize the normal event flag, this should be done before and after every time it is used just incase.
     $ event = 0
     #jump test
     #jump to send to the tech demo, should be commented out for final build
     #jump Beta
     scene black with fade
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 7."
-    g "This update Moved the project to github to speed up development, if you see any new bugs this is probably why"
-    l "That being said nearly everything is not final"
-    g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a secret project!"
-    l "If you all behave maybe I'll give you each a little something special ~"
+
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Jan 30th."
+    g "Since the last private build was released a lot of new writing and art has been added to the project."
+    l "'Saki's' route now has dialogue to read but the graphic data is not finished. you can read through it but it won't be pretty. That being said nearly everything is not final."
+    g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a private test build! Do not post SS or any content from these builds in public places."
+    l "If you all behave maybe I'll give you each a little something special when the final build comes along~"
+    g "Welcome to the Valentines private test build!"
+
 label Intro:
 
     scene bbb outside with fade
@@ -145,6 +150,8 @@ label intro2:
     nar "I fumble through the menu Sakura had laid at my table in between glances at the surrounding scenery, trying to take it all in slow to not overwhelm myself."
     nar "If it wasn't for the pole dancing and ... interesting noises, this actually wouldn't be a bad place for a date."
     nar "Speaking of the pole dancing..."
+
+    #Cg with both looking at each other!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1
     sta "I can see why this place is so popular."
     nar "I had read in some of the online reviews that this place had interesting theming but after seeing Sakura I had assumed they just meant Bunny girls."
@@ -206,25 +213,31 @@ label intro2:
     hide sak smug with dissolve
     sta "Thank you? I think?"
     nar "Sakura's words repeat in my head over and over."
+    #Cg with both looking at each other!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1 with dissolve
-    nar "I just now laid eyes on these girls, I've not even spoken to them but I can't help but feel a little burned by the news I won't even get the chance."
+    nar "I literally just saw these girls and haven't even talked to them, but it still kind of burns knowing I don't have even a small shot at a conversation with them."
     nar "This club has so much going on but my eyes seem stuck on the center stage, I can see why they're part of the 'golden trio' of the club."
     nar "Every single movement they make feels like it was perfectly practiced, the show they're putting on is almost hypnotic."
     nar "I feel like I'm watching two goddesses at work."
     scene bbb bar with dissolve
     nar "I stare into the red liquid filling the glass, I'm honestly a little worried Sakura could have put something in this..."
     nar "But if she was that kind of person I doubt she could work in a high profile club."
-    scene lg cg 1 with dissolve
+    #Cg with eyes closed!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    scene lg cg 1 2 with dissolve
     nar "As I look back to the stage, to my dissapointment the show seems to be ending."
     nar "Curse that stupid wine glass and it's ability to make me lose my concentration."
-    scene lg cg 1 2 with dissolve
-    nar "As I'm thinking of ways to attempt to hurt an innanimate objects feelings, the demon girl locks eyes with me."
+    #Cg with ghosty winking at camera lara looking at her worried!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    scene lg cg 1 3 with dissolve
+    nar "As I'm thinking of ways to attempt to hurt an innanimate objects feelings, are they... looking at me?"
+    nar "Before I can wonder too long, the demon girl locks eyes with me."
+    scene lg cg 1 4 with dissolve
     nar "Is she... calling me up to her?"
     nar "Sakura said she's the owners daughter right? Oh shit did I do something wrong???"
     nar "I can feel my anxiety well up once more, Maybe you're NOT supposed to stare? How could you manage that? Is it what I'm wearing? Is it not classy enough?"
     nar "Could she sense my hostility towards the top heavy liquid holder? (still working on those insults)"
     nar "Maybe she's not..."
-    scene lg cg 1 3 with dissolve
+    #ghosty annoyed...!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    scene lg cg 1 5 with dissolve
     nar "No, she one-hundered percent is."
     nar "Okay okay, it's best to not keep a lady waiting right? 'If This Be My Destiny' and all that. I just wish I had something to help calm my nerves..."
     menu:
@@ -243,6 +256,7 @@ label intro2:
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label c2a1:
     $ event = 0
+    #you don't drink
     nar "I wouldn't dare touch that concoction, there's no telling what Sakura put in there."
     nar "That's totally the reason why... not because I'm still upset or anything."
     jump meetingthegirls
@@ -258,15 +272,22 @@ label c2a2:
 
     jump meetingthegirls   
 label meetingthegirls:
-    scene bbb stage
     nar "With a deep breath I stand up and walk to the center stage."
     nar "Each step gets more difficult, I feel more nervous now than I ever have before."
     nar "Before I know it, Destiny arrives."
+    scene bbb stage
 #------------------------------------------------------------------------------------------------------------------------------------------------
 # How to check an event flag / variables
 #------------------------------------------------------------------------------------------------------------------------------------------------
+#
+#
+#
+# ghosty test
+#
+#
+#
     if event == 1:
-        show ghosty test at right
+        show bghosty at right
         with dissolve 
 
         gu "You okay there love? You looked like you were about to choke. Leave the swallowing to the big girls."
@@ -277,13 +298,12 @@ label meetingthegirls:
     else:
         show blara at left
         with dissolve
-        with dissolve
         lu "You got up here quick, don't let Saki scare you~. She doesn't bite..."
         hide blara at left
         show blara smug at left
         with dissolve
-        lu "Unless you want her to."
-        show ghosty test at right
+        lu "Unless you ask her to."
+        show bghosty at right
         with dissolve
         gf "I won't make any promises..."
         hide blara smug
@@ -340,7 +360,7 @@ label namecheckcode:
     if not povname:
         $ povname = "The Slayer Of Wine Glasses"  
 
-    if povname in [ "MKscorp", "Iffy", "Hatchet", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "MazHazPazzaz", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
+    if povname in [ "MKscorp", "Iffy", "Hatchet", "Reese", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
         jump friendlyname
 
 
@@ -368,23 +388,22 @@ label namecheckcode:
     if povname in ["Shikki"]:
         jump shikkiname
 
-    if povname in [ "Gaster"]:
-        jump end
-
     if povname in ["Genie"]:
         jump geniename
 
     if povname in ["Shiori Fujisaki","Monika","Yuri","Natsuki","Sayori"]:
         jump memoname
 
+    if povname in ["MazHazPazzaz"]:
+        jump mazname
+
     if povname in ["mlzrt"]:
         jump beta
 
     pov "My name is [povname]."
+
 label sohedoeshaveaname:
-
-    
-
+    #this code checks which girl likes the player more at the moment based on actions up to this point.
     if ghosty_love >= lara_love:
         gf "[povname]? That's a cute name, I'd bet you'd love to hear me moan it~"
         hide blara
@@ -418,6 +437,7 @@ label sohedoeshaveaname:
     show blara pout at left
     with dissolve
     l_whisper "I-I mean I might of but I-"
+    #cg insert here!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     gf "It's okay doll, they are pretty cute. And if people get to stare at us all night long I think you've earned to take a few looks yourself."
     gf "That being said, if red has interest in you I just KNOW you've got some potential so I'm curious."
     gf "Who do you find more attractive [povname]?"
@@ -439,7 +459,6 @@ label sohedoeshaveaname:
         "I can't deny the alure of a Demon girl, Saki is more my type.": 
             $ ghosty_love = ghosty_love + 2
             $ ghosty_date_count = ghosty_date_count + 1
-            
             jump bbbs
 
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -460,10 +479,13 @@ label bbbl:
     pov "N-no I mean you're really attractive too just... something about her."
     gf "You don't have to explain yourself love, Lara's got some impressive curves to her. I'm sure she would love to give you a better look at them~."
     l "W-w-wait... you're not joking right? I mean LOOK at her."
-    show blara worry at center with move
+    show blara worry at left
+    show blara worry at center
+    with dissolve
+    with move
     nar "Lara cups Saki's ample chest with her hands."
     hide blara worry
-    show blara shout at center
+    show blara shout at center 
     with dissolve
     l_shout "LOOK AT THESE."
     hide blara shout
@@ -548,7 +570,7 @@ label bbbl2:
     show blara pout at left
     with dissolve
 #how to hide characters and how to move character to center!!!
-    hide ghosty test with moveoutright
+    hide bghosty with moveoutright
     show blara pout at center
     with move
     nar "Without further warning Lara grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
@@ -699,11 +721,23 @@ label bbbl5:
 
     show l cg 1 2 with dissolve
     l "This is doing something for you isn't it?~"
-    nar ""
-    #continue coding here
-
-
+    nar "I wonder what gave me away first? My silence, the fact my face is burning up, or..."
+    l "It's okay to be shy, trust me It takes a while to get used to this kind of thing."
+    nar "Something about getting me flustered seems to have lit a fire inside Lara, it's like all the anxiety and fear she had building up inside her melted away."
+    pov "I mean I-I can't say it isn't"
+    l "aww, but you're not able to say it is? Am I not good enough for you?"
+    nar "Damnit she's good at this. for someone who's inexperienced she's doing a VERY good job."
+    pov "Y-you are more than good enough for me."
     show l cg 1 3 with dissolve
+    l "mmh~ I'm happy to hear you say that."
+    nar "Her soft moan sends a shock through my body, my voice feels like its caught in my throat. Every movement she makes is making it harder to think straight."
+    l "you know, Maybe you could help me take this o-"
+    ph "'Buh duh duh ding'"
+    nar "Lara's eyes widen as she flips back to a seated position scrambling to pull her phone out of her uniform's top."
+    l "I s-sorry just uhm give me a minute I just uhm."
+    l "I just need to check this notification real quick It's uhm really important then I'll mute my phone, Promise."
+    nar "as I watch her fidget with her phone it finally clicks in my brain."
+    pov " "
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
 
@@ -730,12 +764,12 @@ label bbbs:
     nar "Lara seems to have recovered well, she's back to smiling but her words have done anything but calm me, but before I can think too much Ghosty's voice brings me back to reality."
     gf "Don't be scared, love. I will take very good care of you."
     nar "The flame eyed performer licks her teeth as she smiles"
-    pov "I feel like I am walking into a trap."
-    gf "You wouldn't be here if you weren't already looking for a little fun."
-    gf "I am just adding a touch of something... more exciting."
-    gf "Don't you want to let your imagination become reality?"
-    nar "Saki's eyes glisten as she stares at me, its almost like shes pleading. She's obviously very experienced in this kind of thing"
-    
+    pov "I feel like I'm walking into a trap."
+    gf "You wouldn't be here if you weren't already looking for a little fun. "
+    gf "I am just adding a touch of something... more exciting. Don't you want to let your imagination become reality?"
+    nar "Saki's eyes glisten as she stares at me, its almost like shes pleading. She's obviously very experienced in this kind of thing."
+    nar "the character she's playing feels so real. It's hard to believe she really isn't some kind of sex demoness."
+
     menu:
         "Don't you want to let your imagination become reality?"
 
@@ -752,10 +786,10 @@ label bbbs:
         "How much of my imagination, exactly?":
             $ ghosty_love = ghosty_love + 2
             pov "How much of my imagination, exactly?"
-            nar "Part of me was afraid to find out the answer to that question..."
+            nar "Part of me was afraid to find out the answer..."
             gf "Well, that's honestly up to you, love~"
-            gf "You could let your mind run wild."
-            l "Saki is very good at making dreams come true"
+            gf "You could let your mind run wild for all I care. I'm truly up for anything that dirty little brain can think of."
+            l "Saki is very good at making dreams come true."
             l_whisper "I wish she would do the same for me..."
             gf "So tell me.. what is your wildest fantasy?"
             $ fantasy = renpy.input("So tell me.. what is your wildest fantasy?", length=45)
@@ -779,17 +813,18 @@ label bbbs2:
     gf "Great!"
     nar "Before I could even finish she was already pulling a key out from between the cleavage of her bunny suit."
     l "You.. you just have that in there..?!"
-    gf "Duh! A special room key can't just be left out anywhere!~ Do you have the rest of the shift covered or should I call someone to come help?"
+    gf "Duh! A key to a room this special can not just be left out anywhere!~ Do you have the rest of the shift covered or should I call someone to come help?"
     l "Oh, Uhm no I'll be fine, Go have your fun!~"
     gf "Thanks Red!~ I'll pay you back later, Promise!~"
-    l "It's okay Saki Just don't go too hard on him..."
-    nar "Lara's words come out with an emotion I can't quite place, is she sad I didn't pick her or... worried?"
-    gf "I can't make any promises~ Follow me, love.~"
+    nar "The way the two are talking this seems to happen pretty often."
+    l "It's okay Saki Just don't be too rough with them..."
+    nar "Lara's words come out with an emotion I can't quite place, is she just sad I didn't pick her or... Actually worried?"
+    gf "I can't make any promises~ Now, Follow me love.~"
     nar "Saki's words are followed with a wink that causes my heart to race, its like she has me under a spell with how every little thing she does is just so... perfect."
-    nar "Without further warning Saki grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
-    nar "As I followed behind her, I could feel my heart pounding in my chest. I still have no idea what to expect from this..."
-    nar "Before I know it Saki has opened the door to the room where all my questions would hopefully soon be answered"
-    gf "Make yourself comfortable."
+    nar "As my mind continues its attempt to catch up with everything that's going on, Saki grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
+    nar "As I followed behind her, the costumes tail seeming to sway in slow motion as we climed the stairs to the second floor. I can hear my heart pounding in my chest louder with each step."
+    nar "Before I know it Saki has opened the door to the room where all my anxiety will hopefully soon be replaced with pleasure."
+    gf "Make yourself comfortable, Hun."
     nar "If the main floor just 'impressed' me with how classy it was, the 'private room' has nearly given me a stroke. The room has a bed, a couch, a minifridge, a tv, tables and chairs, It's like a mini apartment."
     nar "This is just a room for private shows? It's amazing."
     gf "Oh? I mean it's nothing special. You should see the rooms back at the mansion."
@@ -803,7 +838,7 @@ label bbbs2:
     pov "I guess I just didn't expect this much attention. Especially so quickly"
     gf "But it's nice, isn't it? Besides, Red obviously saw something special in you and she has an AMAZING eye for this kind of thing."
     gf "Plus, I love making guests feel welcome~"
-    nar "without further warning Saki Places her hands on my chest causing a soft shiver to run through my body"
+    nar "without further warning Saki Places her hands on my chest causing a soft shiver to run through my body. I swear she's like a living aphrodisiac."
     gf "Now... How about we get comfortable?"
     nar "Saki pushes into me softly, as I step back I bump into the bed sat in the corner of the room"
     gf "Go ahead, take a seat love.~"
@@ -824,6 +859,8 @@ label bbbs2:
 
 #end the game and return player to title
     label end:
+
+    nar "thank you for play testing the demo <3"
     #this ends the game do not add anything after this point.
     return
 #------------------------------------------------------------------------------------------------------------------------------------------------
@@ -887,11 +924,12 @@ label bbbs2:
         l "We have got to catch up with each other more often!"
         l "Nice of you to visit me at work for a change!~"
         jump sohedoeshaveaname
-    #Name Checker end
-#
-#
-#
 
+    label mazname:
+        l "Maz! It's been a while!"
+        l "How are Willow and Morgan? Still hot?"
+        jump sohedoeshaveaname
+    #Name Ch
 
 
 
@@ -1038,4 +1076,4 @@ label bbbs2:
         l "..."
 
         l "Nice try. Don't you think that might get a little confusing?"
-        jump Beta
+        jump passbeta
