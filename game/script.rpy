@@ -289,7 +289,6 @@ label meetingthegirls:
 #
 #
 #
-# ghosty test
 #
 #
 #
@@ -743,7 +742,7 @@ label bbbl5:
     nar "Lara's eyes widen as she flips back to a seated position scrambling to pull her phone out of her uniform's top."
     l "I s-sorry just uhm give me a minute I just uhm."
     l "I just need to check this notification real quick It's uhm really important then I'll mute my phone, Promise."
-    nar "as I watch her fidget with her phone it finally clicks in my brain."
+    nar "as I watch her fidget with her phone it finally clicks in my brain what app that notification came from."
     pov " "
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
