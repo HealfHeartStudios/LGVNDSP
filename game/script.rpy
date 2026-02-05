@@ -739,11 +739,24 @@ label bbbl5:
     nar "Her soft moan sends a shock through my body, my voice feels like its caught in my throat. Every movement she makes is making it harder to think straight."
     l "you know, Maybe you could help me take this o-"
     ph "'Buh duh duh ding'"
+    scene bbb private room with dissolve
+    hide l cg 1
+    hide l cg 1 2
+    hide l cg 1 3
+    show blara yell with dissolve
     nar "Lara's eyes widen as she flips back to a seated position scrambling to pull her phone out of her uniform's top."
+    hide blara yell
+    show blara think
+    with dissolve
     l "I s-sorry just uhm give me a minute I just uhm."
+    hide blara think
+    show blara worry
+    with dissolve
     l "I just need to check this notification real quick It's uhm really important then I'll mute my phone, Promise."
     nar "as I watch her fidget with her phone it finally clicks in my brain what app that notification came from."
-    pov " "
+    pov "Wait, Was that a Quuest Treasures Online notification?"
+    show laraphone1 with dissolve
+    l "Huh, wait.... you play?"
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
 

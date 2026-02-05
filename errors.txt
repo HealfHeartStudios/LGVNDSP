@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 51: expected 'comma or end of line' not found.
-    $ renpy.movie_cutscene("images/logo.webm")
-    ^
+File "game/script.rpy", line 745: expected 'image_name_component' not found.
+    hide
+        ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Tue Feb  3 02:22:56 2026
+Thu Feb  5 16:50:32 2026
