@@ -871,6 +871,33 @@ label bbbs2:
     nar "Without another thought Saki's body moved on to my lap. "
     nar "I could barely form a sentence feeling Saki on top of me."
     # Lap CG pov
+    gf "I hope I don't weight too much for you.."
+    pov "No! Not at all!"
+    nar "Saki giggled. She wasn't worried at all but it was entertaining to see them get so frantic."
+    gf "Well that's good to hear."
+    nar "The tone of her voice shifted to something much more.. sultry."
+    gf "Don't be shy. I'm making a rare exception, so take advantage of it, darling."
+    nar "Saki guided my hand all across her body, the palms of my hand caressing each inch she allowed me to touch."
+    gf "You're so shaky~"
+    pov "Can you blame me? It's not like I expected to be put in this situation."
+    gf "I can give you so much more than this~"
+    pov "More?"
+    nar "A chill ran down my spine. I have no idea what she is capable of.. but I felt so drawn to find out."
+    pov "Please.. I want more"
+    gf "Aww~ I like the sound of desperation from you."
+    nar "Saki was clearly getting more and more excited by the second. Her hips were practically grinding against my lap."
+    nar "The heat of her body was making my mind swirl."
+    nar "Without a moment's notice Saki lifted herself off my lap and pulled me to stand up."
+    gf "I did promise you a show, didn't I?"
+    nar "Saki moved to be on the bed, slowly strip teasing me. She tosssed each piece of clothing to the side until her body was bare to my eyes."
+    nar "My brain could barely wrap my head around the sight in front of me."
+    gf "I'm going to assume you like what you see"
+    nar "I couldn't even form a sentence as I took in every inch of her skin."
+    pov "Y-yes! Of course!"
+    gf "Good. Join me, darling, or do you need me to help you?"
+
+    # Bed CG pov
+    
     nar "The programmer has a nap. Hold out! Programmer!"
 
     jump end
