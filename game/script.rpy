@@ -880,6 +880,7 @@ label bbbs2:
     nar "Saki guided my hand all across her body, the palms of my hand caressing each inch she allowed me to touch."
     gf "You're so shaky~"
     pov "Can you blame me? It's not like I expected to be put in this situation."
+    # Add more dialogue
     gf "I can give you so much more than this~"
     pov "More?"
     nar "A chill ran down my spine. I have no idea what she is capable of.. but I felt so drawn to find out."
@@ -895,9 +896,8 @@ label bbbs2:
     nar "I couldn't even form a sentence as I took in every inch of her skin."
     pov "Y-yes! Of course!"
     gf "Good. Join me, darling, or do you need me to help you?"
-
+    # Add more dialogue
     # Bed CG pov
-    
     nar "The programmer has a nap. Hold out! Programmer!"
 
     jump end

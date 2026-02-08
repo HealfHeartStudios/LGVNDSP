@@ -1,34 +1,34 @@
-2026-02-08 01:32:33 UTC
+2026-02-08 02:24:56 UTC
 Windows-10-10.0.19045-SP0
 Ren'Py 8.5.0.25111603
 
 Early init took 54 ms
-Loading error handling took 110 ms
-Loading script took 1124 ms
-Loading save slot metadata took 185 ms
+Loading error handling took 20 ms
+Loading script took 290 ms
+Loading save slot metadata took 28 ms
 Loading persistent took 0 ms
-Running init code took 140 ms
-Loading analysis data took 0 ms
-Analyze and compile ATL took 4 ms
-Reloading save slot metadata took 181 ms
+Running init code took 50 ms
+Loading analysis data took 3 ms
+Analyze and compile ATL took 2 ms
+Reloading save slot metadata took 11 ms
 Backing up script files to 'C:\\Users\\sheyl\\AppData\\Roaming/RenPy/backups\\LGVNDSP':
-Dump and make backups took 50 ms
+Dump and make backups took 42 ms
 Cleaning cache took 0 ms
 Making clean stores took 1 ms
-Initial gc took 53 ms
+Initial gc took 47 ms
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 346 ms
+Creating interface object took 331 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
-Load screen analysis took 0 ms
-Analyze screens took 26 ms
-Save screen analysis took 16 ms
-Save pyanalysis took 3 ms
-Save bytecode took 25 ms
+Load screen analysis took 1 ms
+Analyze screens took 8 ms
+Save screen analysis took 10 ms
+Save pyanalysis took 4 ms
+Save bytecode took 22 ms
 Running _start took 1 ms
-Interface start took 212 ms
+Interface start took 215 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -40,8 +40,3 @@ Version: '4.6.0 NVIDIA 581.29'
 Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
 Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
 Maximum texture size: 4096x4096
-Could not open 'cache/shaders.txt':
-Cleaning stores took 0 ms
-Load screen analysis took 19 ms
-Analyze screens took 0 ms
-Running _start took 3 ms
