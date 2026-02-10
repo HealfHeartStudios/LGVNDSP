@@ -754,9 +754,10 @@ label bbbl5:
     with dissolve
     l "I just need to check this notification real quick It's uhm really important then I'll mute my phone, Promise."
     nar "as I watch her fidget with her phone it finally clicks in my brain what app that notification came from."
-    pov "Wait, Was that a Quuest Treasures Online notification?"
+    pov "Wait, Was that a Quest Treasures Online notification? Oh! Is the new expansion coming out?"
     show laraphone1 with dissolve
     l "Huh, wait.... you play?"
+
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
 
@@ -906,12 +907,36 @@ label bbbs2:
 #end the game and return player to title
     label end:
 
-    nar "thank you for play testing the demo <3"
+    #__________________________Text For Valentines Demo_______________________________________
+    scene black
+    l "This concludes the Valentines test demo."
+    l "We here at HHS hope you enjoyed what's been presented."
+    g "I'm sure they enjoyed what you 'Presented' to them on the bed."
+    l "..."
+    l_whisper"... I'm going to ignore that."
+    l "Anyways. Keep in mind nothing was final and it all still needs polish, but please report any major issues, thoughts, or suggestions to SM_pai as well as if you would like to be sent future demos."
+    #-----------------------------------------------------------------------------------------
+    nar "Thank you for playing<3! Tester can now has a nap. Rest Well! Tester!"
     #this ends the game do not add anything after this point.
     return
 #------------------------------------------------------------------------------------------------------------------------------------------------
 # End of game above, next is sub systems used for special events
 #------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #name checker output for Final
     label friendlyname:
         l "Oh! You have the same name as one of my friends"
