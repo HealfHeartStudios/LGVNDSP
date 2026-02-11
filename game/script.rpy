@@ -293,7 +293,7 @@ label meetingthegirls:
 #
 #
     if event == 1:
-        show bghosty at right
+        show bghosty tease at right
         with dissolve 
 
         gu "You okay there love? You looked like you were about to choke. Leave the swallowing to the big girls."
@@ -301,6 +301,9 @@ label meetingthegirls:
         show blara worry at left
         with dissolve
         lu "Saki!~ You're gonna make them actually choke."
+        hide bghosty fsmile
+        show bghosty smile at right
+        with dissolve
     else:
         show blara at left
         with dissolve
@@ -309,11 +312,14 @@ label meetingthegirls:
         show blara smug at left
         with dissolve
         lu "Unless you ask her to."
-        show bghosty at right
+        show bghosty fsmile at right
         with dissolve
         gf "I won't make any promises..."
         hide blara smug
         show blara at left
+        with dissolve
+        hide bghosty fsmile
+        show bghosty smile at right
         with dissolve
     
     
@@ -323,15 +329,24 @@ label meetingthegirls:
     with dissolve
     if event == 1:
         nar "Aw man.. I probably could have savored the spoils of my victory over the glass devil a little longer."
+        hide bghosty smile
+        show bghosty tease at right
+        with dissolve
         gf "So, Lara do you want to tell our wine lover why you wanted them up here so bad?"
 
     else:
+        hide bghosty smile
+        show bghosty tease at right
+        with dissolve
         gf"So Lara do you want to tell our runner about the grand-prize you want to give them?"
     hide blara
     show blara worryb at left
     with dissolve
     l "W-What?? You're the one who wanted them to come up here?!"
     nar "Lara's face flushes red, at first glance it's easy to tell she's these two get along well, but not without a little teasing"
+    hide bghosty tease
+    show bghosty at right
+    with dissolve
     gf "{i}*Sigh*{/i}"
     gf "You're no fun red."
 
@@ -340,6 +355,9 @@ label meetingthegirls:
         show blara pout at left
         with dissolve
         l "And you're way too forward with things."
+        hide bghosty
+        show bghosty judge at right
+        with dissolve
         gf"Fine, before we go any further what's your name love?"
 
     else:
@@ -411,6 +429,10 @@ label namecheckcode:
 label sohedoeshaveaname:
     #this code checks which girl likes the player more at the moment based on actions up to this point.
     if ghosty_love >= lara_love:
+        hide bghosty
+        hide bghosty judge 
+        show bghosty tease at right
+        with dissolve
         gf "[povname]? That's a cute name, I'd bet you'd love to hear me moan it~"
         hide blara
         show blara worryb at left
@@ -420,31 +442,57 @@ label sohedoeshaveaname:
         l "[povname]..."
         l "I think it suits you. It's a great name."
         nar "Lara speaks with a soft smile, her words are genuine"
+        
 
+
+    hide bghosty
+    hide bghosty judge 
+    hide bghosty tease
+    show bghosty fsmile at right
+    with dissolve
     gf "Awww someones interested~. Guess that means it's time to cut to the good stuff!"
     hide blara
     hide blara worryb
     show blara conf at left
     with dissolve
     nar "Lara looks nearly as confused as I do, but I'm happy to know I misunderstood the situation. This seems far more lighthearted than the senarios I was expecting."
+    hide bghosty fsmile
+    show bghosty smile at right
+    with dissolve
     gf "I couldn't help but notice you staring, I mean fuck, I could have sworn you were about to start drooling."
     gf "Hundreds of you pervs come in here every night so I'm sure you're wondering 'why me?' well..."
     hide blara conf
     show blara worry at left
     with dissolve
+    hide bghosty smile
+    show bghosty tease at right
+    with dissolve
     gf "I couldn't help but notice Red kept sneaking glances back at you. I've known this bitch for over a year now and in all that time working together I've NEVER seen her stare at anyone so long."
+    hide bghosty tease
+    show bghosty fsmile at right
+    with dissolve
     gf "Except maybe myself ofcour-"
     hide blara worry
     show blara mad at left
+    hide bghosty fsmile
+    show bghosty at right
     with dissolve
     l_shout "I-I was not!"
     nar "Lara's previous calm nature explodes, I could swear her eyes were glowing as she spoke from how the lights of the club reflected off them."
     hide blara mad
     show blara pout at left
+    hide bghosty
+    show bghosty smile at right
     with dissolve
     l_whisper "I-I mean I might of but I-"
     gf "It's okay doll, they are pretty cute. And if people get to stare at us all night long I think you've earned to take a few looks yourself."
+    hide bghosty smile
+    show bghosty tease at right
+    with dissolve
     gf "That being said, if red has interest in you I just KNOW you've got some potential so I'm curious."
+    hide bghosty tease
+    show bghosty fsmile at right
+    with dissolve
     gf "Who do you find more attractive [povname]?"
     hide blara pout
     show blara worry at left
@@ -478,23 +526,32 @@ label bbbl:
     pov "If I'm being honest, I think Lara is more my type"
     hide blara pout
     show blara worry at left
+    hide bghosty fsmile
+    show bghosty at right
     with dissolve
     l_whisper "H-huh?"
+    hide bghosty
+    show bghosty judge at right
+    with dissolve
     gf "Damn, succutiddies not your thing?"
     pov "N-no I mean you're really attractive too just... something about her."
+    hide bghosty judge
+    show bghosty smile at right
+    with dissolve
     gf "You don't have to explain yourself love, Lara's got some impressive curves to her. I'm sure she would love to give you a better look at them~."
     l "W-w-wait... you're not joking right? I mean LOOK at her."
     show blara worry at left
     show blara worry at center
-    with dissolve
     with move
     nar "Lara cups Saki's ample chest with her hands."
     hide blara worry
     show blara shout at center 
+    show bghosty smile at right
     with dissolve
     l_shout "LOOK AT THESE."
     hide blara shout
     show blara worry at center
+    show bghosty smile at right
     with dissolve
     l "Y-you really find ME more attractive?"
     nar "Lara's eyes show true confusion... but also fear? Who hurt this girl?"
@@ -504,6 +561,9 @@ label bbbl:
         "Y-you really find ME more attractive?"
 
         "It's not just that, there's more to liking someone than just sex appeal.":
+            hide bghosty smile
+            show bghosty dis at right
+            with dissolve
             pov "It's not just that, there's more to liking someone than just sex appeal."
             l "W-well yeah but Saki is so-"
             $ lara_love = lara_love + 1
@@ -512,6 +572,9 @@ label bbbl:
 
         "I'm not lying I really do find you more attractive.": 
             pov "I'm not lying I really do find you more attractive."
+            hide bghosty smile
+            show bghosty tease at right
+            with dissolve
             g "Ignore her, she just wanted an excuse to grab my chest. Hers is just as big."
             hide blara worry
             show blara pout at center
@@ -520,32 +583,59 @@ label bbbl:
             $ lara_love = lara_love + 1
             jump bbbl2
 label bbbl2:
+    nar "It seems Saki's offer of showing herself off finally caught up to Lara."
+    hide bghosty dis
+    hide bghosty tease
+    show bghosty smile at right
     hide blara pout
     hide blara worry
     show blara yell at center
     with dissolve
-    nar "It seems Saki's offer of showing herself off finally caught up to Lara."
     l "S-show them my curves a-are you crazy??? We just met?"
+    hide bghosty smile
+    show bghosty judge at right
+    with dissolve
     gf "Oh? Well BBB policy deems that any customer who gets singled out by a stage performer is entitled to a private show."
     hide blara yell
     show blara shout at center
     with dissolve
     l "Y-You made that up right now!"
+    hide bghosty judge
+    show bghosty fsmile at right
+    with dissolve
     gf "Huh? Red, I would NEVER do something like that... but you know."
     hide blara shout
     show blara worry at center
+    hide bghosty fsmile
+    show bghosty tease at right
     with dissolve
     gf "If you don't want to do it, I could. I'm sure I could give our new 'friend' a night to remember~."
+    hide bghosty tease
+    show bghosty smile at right
+    hide blara worry
+    show blara worry at center
+    with dissolve
     l "N-no I'll do it!... I-if t-they want that of course..."
     pov "I-"
+    hide bghosty tease
+    show bghosty judge at right
+    with dissolve
     gf "Lara. They're practically as red as your hair. They obivously want you. Come on girl I know you're not this oblivious."
+    hide bghosty judge
+    show bghosty at right
+    with dissolve
     nar "I hadn't even noticed how red I was until Saki mentioned it. I feel like my heart is about to beat right out of my chest."
     nar "A PRIVATE SHOW? What does that even mean? Didn't sakura say Lara hadn't done any private shows? Does that mean..."
     nar "No. Brain calm down. This is literally her job."
     pov "I-I mean. If you want to I'd love t-"
+    hide bghosty 
+    show bghosty smile at right
+    with dissolve
     gf "Great to hear! You two horny dogs go have fun in one of the private rooms, try not to break anything~!"
     hide blara worry
     show blara pout at center
+    hide bghosty smile
+    show bghosty fsmile at right
     with dissolve
     gf "Or each other~."
     show blara pout at left with move
@@ -554,28 +644,44 @@ label bbbl2:
     show blara yell at left
     with dissolve
     l "W-wait but my shif-"
+    hide bghosty fsmile
+    show bghosty dis at right
+    with dissolve
     gf "Lara. You and I both know Fanta would be lubing you up herself if she knew you were finally taking interest in someone. Go! I'll finish our shift alone."
+    hide bghosty dis
+    show bghosty wink at right
+    with dissolve
     gf "But I expect to hear about EVERYTHING that happened. Got it?"
     hide blara yell
     show blara worry at left
     with dissolve
     l "I..."
     #all text before this point has been given a second read through as of 11/17/2025
+    hide bghosty wink
+    show bghosty judge at right
+    with dissolve
     gf "No ifs, ands, or buts, not even your massive one. You cover for me whenever I'm in the mood for a snack, now it's my turn. Go! Have fun!"
     hide blara worry
     show blara pout at left
+    hide bghosty judge
+    show bghosty at right
     with dissolve
     l "My Butt is NOT massive."
+    hide bghosty
+    show bghosty tease at right
+    with dissolve
     gf "So now you're lying to yourself and me? Go enjoy your time off before I call Fanta."
     hide blara pout
     show blara shout at left
+    hide bghosty tease
+    show bghosty smile at right
     with dissolve
     l_shout "UGHGHH. Fine."
     hide blara shout
     show blara pout at left
     with dissolve
 #how to hide characters and how to move character to center!!!
-    hide bghosty with moveoutright
+    hide bghosty smile with moveoutright
     show blara pout at center
     with move
     scene bbb stairs with dissolve
@@ -592,18 +698,19 @@ label bbbl2:
             l "Huh?"
             l_whisper "Oh, Oh gosh I'm sorry. I'm just a little nervous is all... I really do uhm."
             l "Nevermind, yes I'm okay."
-            nar "I smile as we walk up the stairs, I can fully understand being nervous."
+            nar "That's a relief, I smile as we walk up the stairs. With how fast everything is going I can fully understand being nervous."
             jump bbbl3
 
         "Say nothing.": 
             nar "It's probably best I dont say anything..."
-            nar "Her grip on my hand tightens as we walk up the stairs."
+            nar "Her grip slowly on my hand tightens as she leads up the stairs, only releasing once the door to the private room has been opened."
             jump bbbl3
 label bbbl3:
-    scene bbb private room with dissolve
+    scene bbb privateroom with dissolve
     show blara with dissolve
-    l "Well uhh... Welcome to the Queen suite!"
-    nar "Lara's words come out with the fakest confidence I have ever heard. Maybe Sakura really was telling the truth when she said Lara has never done this before."
+    l "Well uhh... Welcome to the Bunny-Queen suite! Where I uhm, am gonna make all your fantasies come true."
+    nar "Lara's words come out with the fakest confidence I have ever heard. This is obviously a script shes studied in her head a million times."
+    nar "Maybe Sakura really was telling the truth when she said Lara has never done this before."
     nar "If the main floor just 'impressed' me with how classy it was, the 'private room' has nearly given me a stroke. The room has a bed, a couch, a minifridge, a tv, tables and chairs, It's like a mini apartment."
     nar "In fact, this room is FAR NICER than my own. I find myself once again questioning just how much money this club has?"
     pov "It is really nice."
@@ -623,7 +730,7 @@ label bbbl3:
     with dissolve
     l "I would love for you to be my first private show I'm just a little nervous is all..."
     menu:
-        "?"
+        "I would love for you to be my first private show I'm just a little nervous is all..."
 
         "That's okay we all get nervous sometimes.":
             $ lara_love = lara_love + 2
@@ -692,7 +799,7 @@ label bbbl3:
             jump bbbl4
 label bbbl4:
     hide blara with dissolve
-    nar "Before I can even think about reacting to whats  happening Lara has crawled fully onto the bed."
+    nar "Before I can even think about reacting to what's happening Lara has crawled fully onto the bed."
     show l cg 1 with dissolve
     l "Look, It's not that big, right?"
     nar "Holy."
@@ -737,14 +844,18 @@ label bbbl5:
     show l cg 1 3 with dissolve
     l "mmh~ I'm happy to hear you say that."
     nar "Her soft moan sends a shock through my body, my voice feels like its caught in my throat. Every movement she makes is making it harder to think straight."
-    l "you know, Maybe you could help me take this o-"
+    l "Y'know... I've been practicing for a new stage routine recently, Fanta's idea."
+    l "Maybe I could show you it~."
+    nar "Her confidence is building with each bounce of her hips, my eye's are locked to her motions as her words slowly connect in my mind, I can hear my own heartbeat in my ears. This ass might be the death of me."
+    l "But first I'll need you to help me take off this unifo-"
     ph "'Buh duh duh ding'"
-    scene bbb private room with dissolve
+    scene bbb privateroom with dissolve
     hide l cg 1
     hide l cg 1 2
     hide l cg 1 3
     show blara yell with dissolve
     nar "Lara's eyes widen as she flips back to a seated position scrambling to pull her phone out of her uniform's top."
+    nar "I would comment on how hypocritical it is that she keeps something in there, If I wasn't so brain melted from everything I had just experienced."
     hide blara yell
     show blara think
     with dissolve
@@ -757,6 +868,38 @@ label bbbl5:
     pov "Wait, Was that a Quest Treasures Online notification? Oh! Is the new expansion coming out?"
     show laraphone1 with dissolve
     l "Huh, wait.... you play?"
+    pov "Yeah, I have for years now. Not the biggest fan of QTO: New Beginings but I'm always excited to see new content for the main game!"
+    show laraphone3 with dissolve
+    l_whisper "Holy shit."
+    nar "Wait. Was this a joke? I guess it would be kind of weird to stop everything just to check a notification for a game."
+    nar "I was totally into it to, She probably thinks I'm a weirdo being so excited about a gam-"
+    show laraphone2 with dissolve
+    l "I never thought I would meet someone who like QTO like me! What class do you play? What do you play on?"
+    nar "...Oh my God she's perfect."
+    pov "I have a character for each class, and I usually play on my DV3"
+    l "oooo a console player!~ I respect it. The game was built for controller so it makes since, I usually play on my desktop so I can record footage if I want to."
+    nar "as my mind is slowly clearing from its fog and im realizing the situation i'm in, I'm not sure how we got here."
+    nar "We went from a private show to talking about games but I can't complain, She looks so happy to be talking about this."
+    pov "We should play together some time! What do you record for?"
+    l "Oh uhm... totally! But I uh, usually just record for myself nothing big. What other kinds of games do you play?"
+    #game question! hint to secret ending.
+    menu:
+        "So what kinds of games do you play?"
+
+        "Mostly just other MMO's and RPG's.":
+            pov ""
+            jump bbbl6
+
+        "I like casual things like life sims.": 
+            pov ""
+            jump bbbl6       
+
+        "I like competitive things like Shooters and fighting games.": 
+            pov ""
+            jump bbbl6     
+
+label bbbl6:
+
 
     nar "The programmer has a nap. Hold out! Programmer!"
     jump end
@@ -768,7 +911,7 @@ label bbbl5:
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------
-# Ghosty BBB Date 1
+# Ghosty BBB Date 1 no character animation yet, animate once dia is finished!
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label bbbs:
     pov "I can't deny the alure of a Demon girl, Saki is more my type"
