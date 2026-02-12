@@ -70,7 +70,6 @@ label start:
     g "Welcome to the Valentines private test build!"
 
 label Intro:
-
     scene bbb outside with fade
 
     nar "..."
@@ -914,15 +913,53 @@ label bbbl6:
 # Ghosty BBB Date 1 no character animation yet, animate once dia is finished!
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label bbbs:
+    hide bghosty 
+    show bghosty smile at right
+    with dissolve
     pov "I can't deny the alure of a Demon girl, Saki is more my type"
+    hide blara pout
+    show blara at left
+    with dissolve
     l_whisper "Agreed, Saki is pretty aluring.~"
-    nar "Lara smiles, she's obviously being honest but suprisingly she seems a little dissapointed in my answer. She must not take dissapointment well."
+    nar "Lara smiles, she's obviously being honest but suprisingly she seems a little dissapointed in my answer. It's obvious she doesn't take disapointment well."
+    hide bghosty smile
+    show bghosty wink at right
+    with dissolve
     gf "I'm no regular demon, I'm a Succubus love."
-    nar "Succubus?"
+    pov "Succubus?"
+    hide bghosty wink
+    show bghosty tease at right
+    hide blara 
+    show blara blush at left
+    with dissolve
     gf "Semen demon. Soul-sucker. Vampire for cum. Whatever helps you imagine it."
+    hide bghosty tease
+    show bghosty fsmile at right
+    hide blara blush
+    show blara blush smile at left
+    with dissolve
     gf "All that matters is that I'll give you the best night of your life."
+    hide bghosty fsmile
+    show bghosty at right
+    with dissolve
     gf_whisper "or last..."
     pov "Should I be worried?"
+    hide blara blush smile
+    show blara think at left
+    with dissolve
+
+    #
+    #
+    #
+    #
+    #
+    #
+    #continue here you dumb ass
+    #
+    #
+    #
+    #
+    #
     l_whisper "Only if you're scared of losing your soul."
     nar "Lara seems to have recovered well, she's back to smiling but her words have done anything but calm me, but before I can think too much Ghosty's voice brings me back to reality."
     gf "Don't be scared, love. I will take very good care of you."
@@ -992,7 +1029,7 @@ label bbbs2:
     nar "This is just a room for private shows? It's amazing."
     gf "Oh? I mean it's nothing special. You should see the rooms back at the mansion."
     nar "Saki was incredibly calm about this ordeal... Though I suppose this is the norm for her. If the clubs private rooms are like this, I can't even begin to imagine what her home looks like"
-    gf "I can tell you're nervous. There's no need to be shy, love. I I'm not going to hurt you..."
+    gf "I can tell you're nervous. There's no need to be shy, love. I'm not going to hurt you..."
     gf_whisper "Unless you want me to."
     nar "Every time she whispers I wonder if she knows I can still hear her.."
     pov "I just don't know what to think about this whole... situation. I'm still catching my breath."
@@ -1003,25 +1040,61 @@ label bbbs2:
     gf "Plus, I love making guests feel welcome~"
     nar "without further warning Saki Places her hands on my chest causing a soft shiver to run through my body. I swear she's like a living aphrodisiac."
     gf "Now... How about we get comfortable?"
-    nar "Saki pushes into me softly, as I step back I bump into the bed sat in the corner of the room"
-    gf "Go ahead, take a seat love.~"
-    nar "I could feel the heat of her body against mine. The sensation making my mind blur for a moment before I snapped back."
-    nar "I did as told and sat on the bed, my palms awkwardly fell to my sides on the mattress."
+    nar "Saki pushes into me softly, as I step back I bump into a chair sat in the corner of the room"
+    gf "Go ahead, take a seat.~"
+    #add detail
+    nar "I did as told and sat on the soft chait, my arms awkwardly falling to the sides."
     pov "Um.. I thought this place was about 'look don't touch?'"
     gf "Mmm.."
     nar "There was a mischevious glint in Saki's eyes as she let my question hang in the air for a moment."
     gf "You're right.. but I can make exceptions."
-    gf "I want to give you a once in a life time expereience after all~"
-    nar "Without another thought Saki's body moved on to my lap. "
-    nar "I could barely form a sentence feeling Saki on top of me."
-    # Lap CG pov
+    gf "I want to give you a once in a life time expereience after all~! It's the least I could do as the owner of the BBB's daughter."
+    nar "Without further warning Saki moved into my lap, Her soft thighs wrapping around my waist "
+    nar "The heat of her body against mine is nearly too much. The sensation making my mind blur for a moment before I came back to the reality of whats happening."
+
+    show g cg 1 with fade:
+        yalign 1.0
+    nar "my breath hitches as I see Saki's form sitting atop me. its enough to fully short circut my brain. I can't form a thought much less words."
+    gf "ahem."
+    gf "My eyes are up here love."
+    show g cg 1 :
+        subpixel True
+        yalign 1.0
+        linear 2.0 yalign 0.6
+    gf "..."
+    gf "A little higher babe."
+    show g cg 1 :
+        subpixel True
+        yalign 0.6
+        linear 2.0 yalign 0.1
+    gf "..."
+    gf "there you go!~"
+    show g cg 1 2 with dissolve:
+        yalign 0.1
+    gf "That wasn't so hard now was it?"
+    nar "Saki's smile quickly fades into a pout as my response time fails to meet her needs."
+    show g cg 1 with dissolve:
+        yalign 0.1
     gf "I hope I don't weight too much for you.."
     pov "No! Not at all!"
-    nar "Saki giggled. She wasn't worried at all but it was entertaining to see them get so frantic."
+    show g cg 1 2 with dissolve:
+        yalign 0.1
+    nar "Saki giggled, It was obvious even in my dazed state 'playing with her food' is something she obviously enjoyed."
     gf "Well that's good to hear."
-    nar "The tone of her voice shifted to something much more.. sultry."
-    gf "Don't be shy. I'm making a rare exception, so take advantage of it, darling."
-    nar "Saki guided my hand all across her body, the palms of my hand caressing each inch she allowed me to touch."
+    nar "Her tone of her voice shifted to something much more... sultry."
+    gf "I was joking earlier about having to look me in the eye love. I'm making a rare exception giving a new client a free private show so take full advantage of it, darling."
+    #add choice for face0.1, thighs1.0, or chest cam0.6.
+    #
+    #
+    #
+    #
+    #
+    #
+    #
+
+
+
+    nar "Saki guided my hands all across her body, my palms caressing each inch she lead me to touch."
     gf "You're so shaky~"
     pov "Can you blame me? It's not like I expected to be put in this situation."
     # Add more dialogue
