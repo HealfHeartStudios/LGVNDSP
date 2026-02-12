@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 948, in script
-    show blara thin at left
-Exception: Image 'blara' does not accept attributes 'thin'.
+  File "game/script.rpy", line 1015, in script
+    show blara smile at left
+Exception: Image 'blara' does not accept attributes 'smile'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 948, in script
-    show blara thin at left
+  File "game/script.rpy", line 1015, in script
+    show blara smile at left
   File "renpy/ast.py", line 1357, in execute
     show_imspec(self.imspec, atl=getattr(self, "atl", None))
     ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -33,9 +33,9 @@ Traceback (most recent call last):
     raise Exception(
     ...<4 lines>...
     )
-Exception: Image 'blara' does not accept attributes 'thin'.
+Exception: Image 'blara' does not accept attributes 'smile'.
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Lara & Ghosty 0.1
-Wed Feb 11 19:23:54 2026
+Wed Feb 11 23:10:10 2026

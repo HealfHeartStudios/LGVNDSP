@@ -494,7 +494,7 @@ label sohedoeshaveaname:
     with dissolve
     gf "Who do you find more attractive [povname]?"
     hide blara pout
-    show blara worry at left
+    show blara worryb at left
     with dissolve
     l "G-Saki! You can't just ask that!"
     nar "Lara's tone seems less upset and more... anxious. My mother warned me about questions like this. It's times like these I wish I paid attention to what she said."
@@ -523,8 +523,6 @@ label sohedoeshaveaname:
 label bbbl:
 
     pov "If I'm being honest, I think Lara is more my type"
-    hide blara pout
-    show blara worry at left
     hide bghosty fsmile
     show bghosty at right
     with dissolve
@@ -910,14 +908,14 @@ label bbbl6:
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------
-# Ghosty BBB Date 1 no character animation yet, animate once dia is finished!
+# Ghosty BBB Date 1 
 #------------------------------------------------------------------------------------------------------------------------------------------------
 label bbbs:
     hide bghosty 
     show bghosty smile at right
     with dissolve
     pov "I can't deny the alure of a Demon girl, Saki is more my type"
-    hide blara pout
+    hide blara worryb
     show blara at left
     with dissolve
     l_whisper "Agreed, Saki is pretty aluring.~"
@@ -947,28 +945,30 @@ label bbbs:
     hide blara blush smile
     show blara think at left
     with dissolve
-
-    #
-    #
-    #
-    #
-    #
-    #
-    #continue here you dumb ass
-    #
-    #
-    #
-    #
-    #
     l_whisper "Only if you're scared of losing your soul."
+    hide blara think
+    show blara at left
+    with dissolve
     nar "Lara seems to have recovered well, she's back to smiling but her words have done anything but calm me, but before I can think too much Ghosty's voice brings me back to reality."
+    hide bghosty 
+    show bghosty wink at right
+    with dissolve
     gf "Don't be scared, love. I will take very good care of you."
-    nar "The flame eyed performer licks her teeth as she smiles"
-    pov "I feel like I'm walking into a trap."
+    nar "The flame eyed performer licks her teeth as she smiles, I can't help but feel like she's... Hungry."
+    pov "Sorry, I'm just having a hard time mentally comprehending the situation i'm in. Everything is moving so fast."
+    hide bghosty wink
+    show bghosty at right
+    with dissolve
     gf "You wouldn't be here if you weren't already looking for a little fun. "
-    gf "I am just adding a touch of something... more exciting. Don't you want to let your imagination become reality?"
-    nar "Saki's eyes glisten as she stares at me, its almost like shes pleading. She's obviously very experienced in this kind of thing."
-    nar "the character she's playing feels so real. It's hard to believe she really isn't some kind of sex demoness."
+    hide bghosty 
+    show bghosty judge at right
+    with dissolve
+    gf "I'm just adding a touch of something... more exciting. Don't you want to let your imagination become reality?"
+    hide bghosty judge
+    show bghosty smile at right
+    with dissolve
+    nar "Saki's eyes glisten as she stares at me, it's almost like shes scanning my every desire. She's obviously far more experienced with this kind of thing than I could ever be."
+    nar "this character she's playing feels so real. It's hard to believe she really isn't some kind of sex demoness."
 
     menu:
         "Don't you want to let your imagination become reality?"
@@ -976,10 +976,18 @@ label bbbs:
         "What an amazing night to feel cursed.":
             pov  "What an amazing night to feel cursed."
             nar "The sentence slips out of my mouth without much thought especially not to how random it seems out of context. If this kind of 'Demon' is interested in me, Maybe curses aren't that bad."
+            hide blara 
+            show blara wink at left
+            with dissolve
             l "Oooo, gaming references while talking to a hot girl? I like you."
             nar "Saki blankly stares as me and Lara go back and forth for a second about gaming."
+            hide blara think
+            show blara pout at left
+            hide bghosty smile
+            show bghosty judge at right
+            with dissolve
             gf "You're both so... odd..."
-            nar "Saki was clearly dumbfounded by the two making gaming references."
+            nar "Hmm, Guess gaming isn't Saki's thing."
             $ lara_love = lara_love + 1
             jump bbbs2
 
@@ -987,10 +995,25 @@ label bbbs:
             $ ghosty_love = ghosty_love + 2
             pov "How much of my imagination, exactly?"
             nar "Part of me was afraid to find out the answer..."
+            hide bghosty smile
+            show bghosty wink at right
+            with dissolve
             gf "Well, that's honestly up to you, love~"
+            hide bghosty wink
+            show bghosty tease at right
+            with dissolve
             gf "You could let your mind run wild for all I care. I'm truly up for anything that dirty little brain can think of."
+            hide blara pout
+            show blara at left
+            with dissolve
             l "Saki is very good at making dreams come true."
+            hide blara smile
+            show blara think at left
+            with dissolve
             l_whisper "I wish she would do the same for me..."
+            hide blara think
+            show blara at left
+            with dissolve
             gf "So tell me.. what is your wildest fantasy?"
             $ fantasy = renpy.input("So tell me.. what is your wildest fantasy?", length=45)
     $ fantasy = fantasy.strip()
@@ -1001,12 +1024,33 @@ label bbbs:
     jump bbbs2a
 
 label bbbs2a:
+    hide blara smile
+    show blara blush smile at left
+    hide bghosty tease
+    show bghosty fsmile at right
+    with dissolve
     pov "[fantasy]"
+
     gf "Hot."
 jump bbbs2
     
 label bbbs2:
+    hide blara pout
+    hide blara blush smile
+    show blara  at left
+    hide bghosty fsmile
+    hide bghosty judge
+    show bghosty wink at right
+    with dissolve
     gf "Anyways, if you're interested, I can treat you to a little private show~"
+
+#############################################################################################################################
+    #############################################################################################################################
+    #Continue editing here#############################################################################################################################
+    #############################################################################################################################
+#############################################################################################################################
+
+
     nar "Sakura said Saki was the owners daughter right? I'm not sure my heart could handle something like that but..."
     nar "I would be CRAZY to say no, this could be a once in a life time chance."
     pov "Well.. if you're offering-"
