@@ -1,41 +1,27 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1015, in script
-    show blara smile at left
-Exception: Image 'blara' does not accept attributes 'smile'.
+  File "game/script.rpy", line 67, in script
+    g "Both full first dates are 99% complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly that means you don't get to hear my moans."
+TypeError: %c requires int or char
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 1015, in script
-    show blara smile at left
-  File "renpy/ast.py", line 1357, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 730, in show_imspec
-    renpy.config.show(
-    ~~~~~~~~~~~~~~~~~^
-        name, at_list=at_list, layer=layer, what=expression, zorder=zorder, tag=tag, behind=behind, atl=atl
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "renpy/exports/displayexports.py", line 486, in show
-    if not base.find_target() and renpy.config.missing_show:
-           ~~~~~~~~~~~~~~~~^^                               
-  File "renpy/display/image.py", line 444, in find_target
-    self.target = target._duplicate(a)
-                  ~~~~~~~~~~~~~~~~~^^^
-  File "renpy/display/displayable.py", line 253, in _duplicate
-    args.extraneous()
-    ~~~~~~~~~~~~~~~^^
-  File "renpy/display/displayable.py", line 110, in extraneous
-    raise Exception(
-    ...<4 lines>...
-    )
-Exception: Image 'blara' does not accept attributes 'smile'.
+  File "game/script.rpy", line 67, in script
+    g "Both full first dates are 99% complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly that means you don't get to hear my moans."
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 991, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/exports/sayexports.py", line 118, in say
+    what = what % tag_quoting_dict
+           ~~~~~^~~~~~~~~~~~~~~~~~
+TypeError: %c requires int or char
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Lara & Ghosty 0.1
-Wed Feb 11 23:10:10 2026
+Thu Feb 12 12:33:36 2026
