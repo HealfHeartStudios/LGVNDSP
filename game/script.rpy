@@ -1543,10 +1543,11 @@ label bbb_gl:
         jump sohedoeshaveaname
 
     label marname:
+        $ povname = "Mari"
         l "Huh..."
         l "You don't really look like a fox girl to me..."
         g "why would you say something so strange to someone we just met?"
-        l "It's basic procedure"
+        l "It's basic procedure."
         jump sohedoeshaveaname
 
     label memoname:
@@ -1564,7 +1565,7 @@ label bbb_gl:
     label angname:
         l "Angel! it's been so long!~"
         l "We have got to catch up with each other more often!"
-        l "Nice of you to visit me at work for a change!~"
+        l "Nice of you to visit ME at work for a change!~"
         jump sohedoeshaveaname
 
     label mazname:
