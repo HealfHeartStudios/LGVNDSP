@@ -951,22 +951,49 @@ label bbbl6:
     with dissolve
     l "I-I'm happy you enjoyed learning so much about me but... I'm sure this isn't what you expected from a private 'show'."
     l_whisper "More like a private yap sesh."
+    hide blara worryb
+    show blara blush smile
+    with dissolve
     pov "You're fine! T-trust me even if it got cut short by our talk I saw MORE than enough to be satisfied."
     l "More than enough?..."
+    hide blara blush smile
+    show blara shout
+    with dissolve
     l_shout "MY ASS IS N-"
+    hide blara shout
+    show blara pout
+    with dissolve
     l "{i} Ahh never mind. {/i}"
     nar "That wasn't even what I meant, but it seems the truth always comes to the light."
+    hide blara pout
+    show blara worry
+    with dissolve
     l "I uhm- I had a lot of fun tonight...Like uhm a LOT of fun."
     l "But uhm, I understand if you wanted something more... physical."
     nar "As Lara spoke she pulled a pair of cards out from the clevage of her uniform handing them to me with a smile."
+    hide blara worry
+    show blara
+    with dissolve
     l "Here, these are Saki and my personal numbers. Sakura may not look like it but she's hard core. you're not going to be able to just call the front desk and ask for one of us."
     nar "Lara's words both stun me into near silence and fill my head with a million questions."
     pov "W-wait your personal phone numbers? Both of yours?"
     l "Yeah? Are you really that shocked? After everything tonight I would even give you my personal Xwit-r @"
+    hide blara
+    show blara smug
+    with dissolve
     l "It's @LaraChiba by the way~!"
+    hide blara smug
+    show blara
+    with dissolve
     pov "I-I guess that makes since but... Why would I call you?"
     l "I-I mean... I thought maybe you might want to try this whole Private show thing again some time, That's why I gave you Saki's number too."
+    hide blara
+    show blara worryb
+    with dissolve
     l "She uhm... Is better at this than me. I feel we owe you a 'Real' private show after this..."
+    hide blara worryb
+    show blara blush smile
+    with dissolve
     l "Though uhm if you ever want to just text and chat about games you could always use my number for that too."
     pov "I-I..."
     nar "I'm not sure even now how I got to this point But I've learned to not question good things tonight."
