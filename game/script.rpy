@@ -34,6 +34,7 @@ define ph = Character("Phone", color="#faf0f0")
 default lara_love = 5
 default ghosty_love = 5
 default event = 0
+default drink = 0
 default lara_date_count = 0
 default ghosty_date_count = 0
 default wf = 0
@@ -261,14 +262,14 @@ label intro2:
 #w How to set flags // in this code it sets if you drink or not. '$ event = 0' . event is the defualt flag for this kind of action as outlined in the header code.
 #w------------------------------------------------------------------------------------------------------------------------------------------------
 label c2a1:
-    $ event = 0
+    $ drink = 0
     #you don't drink
     nar "I wouldn't dare touch that concoction, there's no telling what Sakura put in there."
     nar "That's totally the reason why... not because I'm still upset or anything."
     jump meetingthegirls
 
 label c2a2: 
-    $ event = 1
+    $ drink = 1
     #you drink
     nar "I grab the great evil by it's stem and put it to my lips, it will never hurt another soul."
     nar "..."
@@ -291,7 +292,7 @@ label meetingthegirls:
 #w
 #w
 #w
-    if event == 1:
+    if drink == 1:
         show bghosty tease at right
         with dissolve 
 
@@ -326,7 +327,7 @@ label meetingthegirls:
     hide blara worry
     show blara at left
     with dissolve
-    if event == 1:
+    if drink == 1:
         nar "Aw man.. I probably could have savored the spoils of my victory over the glass devil a little longer."
         hide bghosty smile
         show bghosty tease at right
@@ -880,32 +881,100 @@ label bbbl5:
     pov "We should play together some time! What do you record for?"
     l "Oh uhm... totally! But I uh, usually just record for myself nothing big. What other kinds of games do you play?"
     #r game question! hint to secret ending.
+
     menu:
         "So what kinds of games do you play?"
 
         "Mostly just other MMO's and RPG's.":
-            pov ""
+            $ lara_love = lara_love + 3
+            pov "Mostly just other MMO's and RPG's."
+            pov "I play other kinds of games but story based games have always been a favorite."
+            #Phantasy is spelt that way on purpose
+            l "I respect that! I've played a ton of different rpgs over the years. From Lizard warrior to Last Dream. I love getting lost in a phantasy world and getting to escape reality for a while."
+            l "I enjoy MMO's too, its nice getting to see comunities form around them even if they can be a little expensive sometimes."
+            l "Looking at you Last Dream 14."
+            l "Thankfully that's not an issue for me anymore, Fanta offered to start paying for all my subscriptions once I started working here."
+            pov "Really? That's a... different employee benefit."
+            l "I know! isn't it awesome?"
             jump bbbl6
 
         "I like casual things like life sims.": 
-            pov ""
+            $ lara_love = lara_love + 2
+            pov "I guess it might sound basic but I mostly like casual things like life sims."
+            l "Hey! that's not basic. Everyone has their own likes and dislikes."
+            l "I love playing a nice relaxing game from time to time. you can't be collecting 4 crystals or avenging your dead brother by taking down a corrupt government in every game..."
+            show laraphone3 with dissolve
+            l "Well I guess you could but it would get boring."
+            show laraphone2 with dissolve
+            l "It's nice to get to just enjoy your time with a game and not feel like you have to do something in particular."
+            l "besides everyone has their 1 month DIGBUILD phase from time to time."
             jump bbbl6       
 
         "I like competitive things like Shooters and fighting games.": 
-            pov ""
+            $ lara_love = lara_love + 1
+            pov "I like competitive things like Shooters and fighting games."
+            l "Oooo A competitive type. How good are you?"
+            pov "I like to think I'm pretty good. I wouldn't say like, top tier but pretty good."
+            l "And modest too? How sweet. I mostly play older Shooters when I'm in the competitive mood."
+            l "Ring 2 and the original Ring are both super fun. When it comes to fighters I love the 'wanted' series. I love me a ninja girl."
             jump bbbl6     
-
 label bbbl6:
-
-
-    nar "The programmer has a nap. Hold out! Programmer!"
-    jump end
-
-
-
-
-
-#p
+    nar "Listening to her ramble on and on about games... It's kinda cute? I wonder how often she gets to do this kind of thing."
+    pov "What kinds of games do you like?"
+    show laraphone3 with dissolve
+    l "Me? I like a little of everything to be honest..."
+    l "Recently I've mostly been playing retro games. I picked up this cool Dating sim for the original DV1"
+    pov "I didn't know they made dating sims for consoles back then?"
+    l "Same! but its been super fun! I've seen people online complain it takes a long time to load your save file but I don't understand that."
+    l "You're only loading once per play session anyway right? I guess some people like to go back to make sure they always pick the right option but that always felt..."
+    l "weird to me? If you're playing a game where the challenge comes from making decisions why load when you make the wrong ones. isn't that kind of cheating? And what about the poor girls."
+    l "They'll never know you're only saying what they want to hear... Maybe I'm just too emotional"
+    pov "No I get it. why play the game If you're not going to 'PLAY' the game."
+    l "Yeah! exactly that!"
+    show laraphone2 with dissolve
+    l "I hope you're not just saying that because you think it's what I want to hear~!"
+    pov "I could never!"
+    scene black with dissolve
+    nar "We both laugh as we continue our conversation. With how it started the is far from how I expected the night to go, and even further from how I expected Lara to be."
+    nar "She seems like such a fun person, I wish I had the time to get to know her better but all good things must come to an end."
+    scene bbb privateroom with dissolve
+    show blara worry with dissolve
+    l "I uhm... Just wanted to say sorry for like, kind of half lying to you earlier when I got the QTO notification."
+    hide blara worry
+    show blara blush smile
+    with dissolve
+    l "I just didn't want you to think I was weird for being so excited about a game. I have a hard time believing people will accept certain parts of me... I should have known you would understand."
+    nar "I can't help but smile at her words. Tonight was... an experience to say the least. It was far from what I expected but I enjoyed it."
+    pov "I'm happy you decided to tell me. I would have never learned so much about you if you didn't."
+    l "I-I'm happy you enjoyed learning so much about me but... It wasn't much of a private 'show'."
+    l_whisper "More like a private yap sesh."
+    pov "You're fine! T-trust me even if it got cut short by our talk I saw MORE than enough to be satisfied."
+    l "More than enough?..."
+    l_shout "MY ASS IS N-"
+    l "{i} Ahh never mind. {/i}"
+    nar "That wasn't even what I meant, but it seems the truth always comes to the light."
+    l "I uhm- I had a lot of fun tonight...Like uhm a LOT of fun."
+    l "But uhm, I understand if you wanted something more... physical."
+    nar "As Lara spoke she pulled a pair of cards out from the clevage of her uniform handing them to me with a smile."
+    l "Here, these are Saki and my personal numbers. Sakura may not look like it but she's hard core. you're not going to be able to just call the front desk and ask for one of us."
+    nar "Lara's words both stun me into near silence and fill my head with a million questions."
+    pov "W-wait your personal phone numbers? Both of yours?"
+    l "Yeah? Are you really that shocked? After everything tonight I would even give you my personal Xwit-r @"
+    l "It's @LaraChiba by the way~!"
+    pov "I-I guess that makes since but... Why would I call you?"
+    l "I-I mean... I thought maybe you might want to try this whole Private show thing again some time, That's why I gave you Saki's number too."
+    l "She uhm... Is better at this than me. I feel we owe you a 'Real' private show after this..."
+    l "Though uhm if you ever want to just text and chat about games you could always use my number for that too."
+    pov "I-I..."
+    nar "I'm not sure even now how I got to this point But I've learned to not question good things tonight."
+    pov "Thank you, I appreciate it."
+    l "You're welcome. I- We look forward to hearing from you."
+    l "It's uhm, almost closing time so I need to get downstairs to help Saki and the girls clean. I'll walk you out [povname]-"
+    l_whisper "I-If that's okay with you?"
+    pov "I'd love that"
+    nar "Lara smiles as she takes my hand leading me back out the doors of the private room"
+    scene black with fade    
+    jump bbb_el
 #p
 #p
 #p
@@ -914,7 +983,6 @@ label bbbl6:
 #p------------------------------------------------------------------------------------------------------------------------------------------------
 #p Ghosty BBB Date 1 
 #p------------------------------------------------------------------------------------------------------------------------------------------------
-#p
 #p
 #p
 #p
@@ -1032,7 +1100,6 @@ label bbbs:
         $ fantasy = "Getting the soul sucked out of my body"
 
     jump bbbs2a
-
 label bbbs2a:
     hide blara smile
     show blara blush smile at left
@@ -1042,8 +1109,7 @@ label bbbs2a:
     pov "[fantasy]"
 
     gf "Hot."
-jump bbbs2
-    
+    jump bbbs2  
 label bbbs2:
     hide blara pout
     hide blara blush smile
@@ -1286,7 +1352,7 @@ label bbbs2:
     show bghosty smile
     with dissolve
     nar "Soon Saki returns to the bed side, She's so full of energy even while I'm still trying to catch my breath. She's truly on a different level."
-    gf "Sorry it took so long, Had to fix up my body makeup after the shower, it supposed to be water proof but It still runs from time to time. gotta keep up the illusion four the audience you know?"
+    gf "Sorry it took so long, Had to fix up my body makeup after the shower, it's supposed to be water proof but It still runs from time to time. gotta keep up the illusion four the audience you know?"
     pov "You...You're fine I'm just now catching my breath."
     hide bghosty smile
     show bghosty wink
@@ -1297,39 +1363,116 @@ label bbbs2:
     show bghosty 
     with dissolve
     gf "Speaking of Red. Lara has some actual interest in you, Which believe it or not is rare. She's not the kind to fall for someone so easily. You're a lucky person to have caught her eye."
-    gf "I'm not going to tell you what you have to do but maybe think about giving her a call or something, It may not be as..."
-    gf "Physical as our time here tonight but I'm sure she would treat you to an amazing time. plus have you seen her ass? I'm pretty sure it claps when she blinks"
+    gf "I'm not going to tell you what you have to do but maybe think about giving her a call or something..."
+    hide bghosty 
+    show bghosty wink
+    with dissolve
+    gf "It may not be as physical as our time here tonight but I'm sure she would treat you to an amazing time. Plus have you seen her ass? I'm pretty sure it claps when she blinks."
+    hide bghosty wink
+    show bghosty judge
+    with dissolve
     gf "don't tell her I said that. I'll never hear the end of it."
+    hide bghosty judge
+    show bghosty smile
+    with dissolve
     gf "that being said I wouldn't be opposed to another Night of fun aswell. It's not often Someone stays awake once I'm finished with them!~"
     nar "That is 100% believable. I can feel my body begging for sleep as I listen to her speak."
     gf "Here. hand me your phone."
     nar "I do as I'm told, I'm not gonna argue with the woman that just showed me nirvana. Even so I'm curious what she could need it for."
     pov "What for?"
+    hide bghosty smile
+    show bghosty tease
+    with dissolve
     gf "Sakura may not look it but she's hard core. you're not going to be able to just call the front desk and ask for one of us. I'm putting our personal numbers in here."
     nar "As she speaks she snaps a picture of herself, winking with her tongue out. filling out her contact information."
     pov "Your personal numbers? are you sure that's okay?"
+    hide bghosty tease
+    show bghosty judge
+    with dissolve
     gf "I wouldn't do something I'm not sure I want to do."
+    hide bghosty judge
+    show bghosty smile
+    with dissolve
     gf "Besides, I got to blow off some steam tonight. It's the least I could do to re-pay you~!"
-    gf "The club will be closing soon, I'll walk you downstairs just remember to give what I said a thought hun."
+    gf "The club will be closing soon So I probably need to help the girls clean up."
+    gf " I'll walk you downstairs just remember to give what I said a thought hun."
+    scene black with dissolve
+    jump bbb_gl
     #p
-    #p
-    #p add ghosty animation and smooth transition to ending.
-    #p
-    #p
-
-
-
+    #p 2/12/2026 Ghosty date 1 first pass finished. somehow before Lara's??? I've betrayed my girl.
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w Endings for first dates.________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
 #r lara ending
 label bbb_el:
+    scene bbb entrance with dissolve
+    l "W-well I guess It's time we say our goodbyes."
+    show blara blush smile with dissolve 
+    
+    if drink == 1:
+        sak "Not so fast wine abandoner!"
+        show sak pout at left
+        with dissolve 
+        sak "you're not leaving here without giving us all the details!~"
+        show sak lewd at left
+        with dissolve 
+        
+
+    else:
+        sak "Not so fast ladykiller!~"
+        show sak smug at left
+        with dissolve 
+        sak "you're not leaving here without giving us all the details!~"
+        show sak lewd at left
+        with dissolve 
+
+
+
     jump end
 
-
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
+#w_________________________________________________________________
 
 #p ghosty ending
 label bbb_gl:
+    scene bbb entrance with dissolve
+    gf "Okay love, I had a lot of fun tonight but It's time you say your goodbyes~."
+    show bghosty wink with dissolve
+    
+    if drink == 1:
+        sak "Not so fast wine abandoner!"
+        show sak pout at right
+        with dissolve 
+        sak "you're not leaving here without giving me ALL the details!~"
+        show sak lewd at right
+        with dissolve 
+        
+
+    else:
+        sak "Not so fast ladykiller!~"
+        show sak smug at right
+        with dissolve 
+        sak "you're not leaving here without giving me ALL the details!~"
+        show sak lewd at right
+        with dissolve 
+
+    
+
     jump end
 
 
+
+
+
+#nar "The programmer has a nap. Hold out! Programmer!"
 
 #w end the game and return player to title
     label end:
