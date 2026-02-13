@@ -1,27 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 67, in script
-    g "Both full first dates are 99% complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly that means you don't get to hear my moans."
-TypeError: %c requires int or char
+NameError: name 'sak' is not defined. Did you mean: 'say'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 1429, in script
+    sak "Not so fast ladykiller!~"
+Exception: Sayer 'sak' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 67, in script
-    g "Both full first dates are 99% complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly that means you don't get to hear my moans."
+  File "renpy/ast.py", line 625, in eval_who
+    return renpy.python.py_eval(who)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<none>", line 1, in <module>
+NameError: name 'sak' is not defined. Did you mean: 'say'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 1429, in script
+    sak "Not so fast ladykiller!~"
   File "renpy/ast.py", line 2915, in execute
     Say.execute(self)
     ~~~~~~~~~~~^^^^^^
-  File "renpy/ast.py", line 991, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/exports/sayexports.py", line 118, in say
-    what = what % tag_quoting_dict
-           ~~~~~^~~~~~~~~~~~~~~~~~
-TypeError: %c requires int or char
+  File "renpy/ast.py", line 956, in execute
+    who = eval_who(self.who, self.who_fast)
+          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 627, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'sak' is not defined.
 
-Windows-10-10.0.19045-SP0 AMD64
+macOS-26.1-arm64-arm-64bit arm64
 Ren'Py 8.4.1.25072401
 Lara & Ghosty 0.1
-Thu Feb 12 12:33:36 2026
+Fri Feb 13 13:43:42 2026

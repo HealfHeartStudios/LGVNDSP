@@ -946,7 +946,10 @@ label bbbl6:
     l "I just didn't want you to think I was weird for being so excited about a game. I have a hard time believing people will accept certain parts of me... I should have known you would understand."
     nar "I can't help but smile at her words. Tonight was... an experience to say the least. It was far from what I expected but I enjoyed it."
     pov "I'm happy you decided to tell me. I would have never learned so much about you if you didn't."
-    l "I-I'm happy you enjoyed learning so much about me but... It wasn't much of a private 'show'."
+    hide blara blush smile
+    show blara worryb
+    with dissolve
+    l "I-I'm happy you enjoyed learning so much about me but... I'm sure this isn't what you expected from a private 'show'."
     l_whisper "More like a private yap sesh."
     pov "You're fine! T-trust me even if it got cut short by our talk I saw MORE than enough to be satisfied."
     l "More than enough?..."
@@ -1408,27 +1411,32 @@ label bbbs2:
 #r lara ending
 label bbb_el:
     scene bbb entrance with dissolve
-    l "W-well I guess It's time we say our goodbyes."
     show blara blush smile with dissolve 
+    l "W-well I guess It's time we say our goodbyes."
     
     if drink == 1:
-        sak "Not so fast wine abandoner!"
         show sak pout at left
+        show bghosty wink at right
         with dissolve 
-        sak "you're not leaving here without giving us all the details!~"
+        sa "Not so fast wine abandoner!"
+        sa "I mean, who leaves a FREE drink at their table."
         show sak lewd at left
         with dissolve 
+        sa "Anyways, you're not leaving here without giving us all the details!~"
         
 
     else:
-        sak "Not so fast ladykiller!~"
         show sak smug at left
+        show bghosty wink at right
         with dissolve 
-        sak "you're not leaving here without giving us all the details!~"
+        sa "Not so fast ladykiller!~"
         show sak lewd at left
         with dissolve 
-
-
+        sa "you're not leaving here without giving us all the details!~"
+        
+    show blara worryb
+    with dissolve
+    l "S-sakura can't you wait till they leave to ask things like that?"
 
     jump end
 
@@ -1444,25 +1452,45 @@ label bbb_el:
 #p ghosty ending
 label bbb_gl:
     scene bbb entrance with dissolve
-    gf "Okay love, I had a lot of fun tonight but It's time you say your goodbyes~."
     show bghosty wink with dissolve
+    gf "Okay love, I had a lot of fun tonight but It's time you say your goodbyes~."
+    
     
     if drink == 1:
-        sak "Not so fast wine abandoner!"
         show sak pout at right
         with dissolve 
-        sak "you're not leaving here without giving me ALL the details!~"
+        sa "Not so fast wine abandoner!"
         show sak lewd at right
         with dissolve 
+        sa "I mean, who leaves a FREE drink at their table."
+        sa "Anyways, you're not leaving here without giving me ALL the details!~"
+        
         
 
     else:
-        sak "Not so fast ladykiller!~"
         show sak smug at right
         with dissolve 
-        sak "you're not leaving here without giving me ALL the details!~"
+        sa "Not so fast ladykiller!~"
         show sak lewd at right
         with dissolve 
+        sa "you're not leaving here without giving me ALL the details!~"
+        
+    show blara worryb at left
+    with dissolve
+    l "S-sakura y-you can wait till they've left to ask Saki?"
+    sa "No way. I need every detail right now."
+    sa "Every. Detail."
+    gf "Mmmm, Sorry Sakura I think you'll need to wait. If you want every detail we're gonna be here all night!~"
+    sa "Ooooo I'm excited!!"
+    l "I just hope you weren't too rough..."
+    gf "Don't worry Red I was gentle!~ Right [povname]?"
+    nar "I'm not sure If I would consider what we did gentle, but I'm not about to argue."
+    pov "yeah-"
+    gf "See!~"
+    l "As long as [povname] enjoyed themselves..."
+    
+    
+    
 
     
 
@@ -1477,7 +1505,7 @@ label bbb_gl:
 #w end the game and return player to title
     label end:
     #y__________________________Text For Valentines Demo_______________________________________
-    scene black
+    scene black with dissolve
     l "This concludes the Valentines test demo."
     l "We here at HHS hope you enjoyed what's been presented. It's not much but this was a few months of learning and work"
     g "I'm sure they enjoyed what you 'Presented' to them on the bed."
