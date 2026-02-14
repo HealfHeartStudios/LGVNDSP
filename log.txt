@@ -1,48 +1,29 @@
-2026-02-14 03:29:46 UTC
+2026-02-14 08:00:26 UTC
 Windows-10-10.0.19045-SP0
-Ren'Py 8.5.0.25111603
+Ren'Py 8.4.1.25072401
 
-Early init took 45 ms
-Loading error handling took 55 ms
-Loading script took 528 ms
-Loading save slot metadata took 202 ms
+Early init took 52 ms
+Loading error handling took 148 ms
+Loading script took 1446 ms
+Loading save slot metadata took 26 ms
 Loading persistent took 0 ms
-Running init code took 108 ms
-Loading analysis data took 16 ms
-Analyze and compile ATL took 3 ms
-Reloading save slot metadata took 163 ms
-Backing up script files to 'C:\\Users\\sheyl\\AppData\\Roaming/RenPy/backups\\LGVNDSP':
-Dump and make backups took 42 ms
+Running init code took 127 ms
+Loading analysis data took 0 ms
+Analyze and compile ATL took 5 ms
+Reloading save slot metadata took 14 ms
+Backing up script files to 'C:\\Users\\dirka\\AppData\\Roaming/RenPy/backups\\LGVNDSP':
+Dump and make backups took 47 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
-Initial gc took 40 ms
+Initial gc took 41 ms
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 443 ms
+Creating interface object took 200 ms
 Init translation took 0 ms
 Cleaning stores took 0 ms
-Load screen analysis took 10 ms
-Analyze screens took 9 ms
+Load screen analysis took 0 ms
+Analyze screens took 25 ms
 Save screen analysis took 10 ms
 Save pyanalysis took 4 ms
-Save bytecode took 22 ms
-Running _start took 1 ms
-Interface start took 210 ms
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: 'NVIDIA Corporation'
-Renderer: 'NVIDIA GeForce GTX 1650/PCIe/SSE2'
-Version: '4.6.0 NVIDIA 581.29'
-Display Info: <Info({'bitsize': 32, 'bytesize': 4, 'masks': (16711680, 65280, 255, 0), 'shifts': (16, 8, 0, 0), 'losses': (0, 0, 0, 8), 'current_w': 1920, 'current_h': 1080, 'refresh_rate': 60, 'hw': False, 'wm': True, 'video_mem': 268435456, 'blit_hw': False, 'blit_hw_CC': False, 'blit_hw_A': False, 'blit_sw': False, 'blit_sw_CC': False, 'blit_sw_A': False})>
-Screen sizes: virtual=(1920, 1080) physical=(1739, 978) drawable=(1739, 978)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(753, 580) drawable=(753, 580)
-Maximum texture size: 4096x4096
-Resize event: <Event(65533-VIDEORESIZE h=580, mod=4096, size=(753, 580), w=753)>
-Screen sizes: virtual=(1920, 1080) physical=(1079, 618) drawable=(1079, 618)
-Maximum texture size: 4096x4096
-Resize event: <Event(65533-VIDEORESIZE h=618, mod=4096, size=(1079, 618), w=1079)>
+Save bytecode took 0 ms
