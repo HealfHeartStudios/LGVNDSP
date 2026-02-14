@@ -61,11 +61,11 @@ label start:
     #w jump test
     #w jump to send to the tech demo, should be commented out for final build
     #w jump Beta
-    scene black with fade
+    scene message with dissolve
 
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Feb 3rd."
-    g "Both full first dates are mostly complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly that means you don't get to hear my moans."
-    l "Maybe next time ;)"
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Feb 13th."
+    g "Both full first dates are mostly complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly means you don't get to hear my moans."
+    l "Maybe next time ;)."
     g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a private test build! Do not post SS or any content from these builds in public places. We want the plot to be a surprise!"
     l "If you all behave maybe I'll give all the testers a little something special in game when the final build comes along~!"
     g "Welcome to the Valentines private test build! Thank you for your time."
@@ -375,7 +375,6 @@ label meetingthegirls:
 #w------------------------------------------------------------------------------------------------------------------------------------------------
 #w Code to ask for players name
 #w------------------------------------------------------------------------------------------------------------------------------------------------
-        
 label namecheckcode:
 
     $ povname = renpy.input("Okay, let's get this out of the way. What is your name?", length=25)
@@ -420,6 +419,9 @@ label namecheckcode:
 
     if povname in ["MazHazPazzaz"]:
         jump mazname
+
+    if povname in ["Daddy"]:
+        jump daddyname
 
     if povname in ["mlzrt"]:
         jump beta
@@ -1438,6 +1440,7 @@ label bbbs2:
 #r lara ending
 label bbb_el:
     scene bbb entrance with dissolve
+    nar "As we reach the entrance, Lara releases my hand and turns to face me"
     show blara blush smile with dissolve 
     l "W-well I guess It's time we say our goodbyes."
     
@@ -1457,13 +1460,104 @@ label bbb_el:
         show bghosty wink at right
         with dissolve 
         sa "Not so fast ladykiller!~"
+        hide sak smug
         show sak lewd at left
         with dissolve 
         sa "you're not leaving here without giving us all the details!~"
         
+        # sakura done
+        # lara done 
+        # ghosty done
+    hide blara blush smile   
     show blara worryb
     with dissolve
-    l "S-sakura can't you wait till they leave to ask things like that?"
+    l "S-sakura! Y-you can wait till they've left to ask."
+    hide sak lewd
+    show sak pout at left
+    with dissolve 
+    sa "No way. I need every detail right now."
+    hide sak pout
+    show sak smug at left
+    with dissolve 
+    sa "Every. Detail."
+    hide bghosty wink
+    show bghosty fsmile at right
+    with dissolve 
+    gf "Sakura I want to know too but if we make Lara explain in front of [povname] I think she might melt into a puddle of embarasment."
+    hide sak smug
+    show sak pout at left
+    hide bghosty fsmile 
+    show bghosty smile at right
+    with dissolve 
+    sa "hmpf. fine."
+    hide blara worryb 
+    show blara blush smile
+    hide bghosty smile 
+    show bghosty at right
+    with dissolve
+    l "It wasn't anything crazy anyway..."
+    hide sak pout
+    show sak smug at left
+    hide bghosty
+    show bghosty judge at right
+    with dissolve
+    gf "I never said it was, But I have GOT to know every little thing."
+    hide bghosty judge
+    show bghosty fsmile at right
+    with dissolve
+    gf "But I also love to hear about every big thing."
+    nar "Ghosty's wink sends a chill down my spine. I feel if I had chosen to have my private show with her it wouldn't have ended with a talk about video games..."
+    hide blara blush smile   
+    show blara 
+    with dissolve
+    l "I promise I'll tell you everything once we have the club closed for the night."
+    hide sak smug
+    show sak happy at left
+    hide bghosty fsmile
+    show bghosty at right
+    with dissolve 
+    sa "Oh my god I can't wait. Did you use any toy-"
+    hide blara   
+    show blara pout
+    with dissolve
+    l "Sakura. Once. They. Are. Gone."
+    hide sak happy
+    show sak lewd at left
+    hide blara pout 
+    show blara think
+    with dissolve 
+    sa "Yes mommy."
+    hide sak lewd
+    show sak smug at left
+    hide blara think 
+    show blara blush smile
+    hide bghosty
+    show bghosty smile at right
+    with dissolve 
+    gf "Sakura's just excited about the idea of little miss red finally showing interest in someone."
+    hide blara blush smile
+    show blara blush
+    with dissolve 
+    l "Alright, t-thats enough talking for now. we gotta get things cleaned up for the night."
+    hide blara blush
+    show blara blush smile
+    with dissolve 
+    l "[povname], Thank you for visiting the BBB, I really hope you enjoyed everything..."
+    pov "I did, Thank you"
+    if drink == 1:
+        hide sak smug
+        show sak pout at left
+        with dissolve 
+        sa "You sure didn't enjoy the FREE drink..."
+        hide sak pout
+        show sak smug at left
+        with dissolve 
+    #o could be an issue. unsure atm 2/13/2026
+    l "And uh, Remember to think about those numbers I gave you... both of them. please?"
+    pov "I will, thank you again. I had a lot of fun tonight"
+    scene black with dissolve
+    nar "As the conversation died out I left the doors of the building I had been so scared to enter just hours before now a little sad to be leaving."
+    nar "..."
 
     jump end
 
@@ -1479,8 +1573,9 @@ label bbb_el:
 #p ghosty ending
 label bbb_gl:
     scene bbb entrance with dissolve
+    nar "As we reach the entrance the fog in my mind finally begins to clear."
     show bghosty wink with dissolve
-    gf "Okay love, I had a lot of fun tonight but It's time you say your goodbyes~."
+    gf "Okay love, I had a lot of fun tonight but It's time you head home.~"
     
     
     if drink == 1:
@@ -1492,6 +1587,7 @@ label bbb_gl:
         sa "I mean, who leaves a FREE drink at their table."
         sa "Anyways, you're not leaving here without giving me ALL the details!~"
         
+    
         
 
     else:
@@ -1502,25 +1598,78 @@ label bbb_gl:
         with dissolve 
         sa "you're not leaving here without giving me ALL the details!~"
         
+        # sakura done
+        # lara
+        # ghosty
+    hide bghosty wink
+    show bghosty smile
     show blara worryb at left
     with dissolve
-    l "S-sakura y-you can wait till they've left to ask Saki?"
+    l "S-sakura! C-can't you wait till they've left to ask Saki?"
+    hide sak lewd
+    show sak pout at left
+    show blara blush smile
+    with dissolve 
     sa "No way. I need every detail right now."
+    hide sak pout
+    show sak lewd at left
+    with dissolve 
     sa "Every. Detail."
+    hide bghosty smile
+    show bghosty fsmile
+    with dissolve
     gf "Mmmm, Sorry Sakura I think you'll need to wait. If you want every detail we're gonna be here all night!~"
+    hide sak lewd
+    show sak smug at left
+    with dissolve 
     sa "Ooooo I'm excited!!"
+    hide blara blush smile
+    show blara worryb at left
+    with dissolve
     l "I just hope you weren't too rough..."
+    hide bghosty fsmile
+    show bghosty tease
+    with dissolve
     gf "Don't worry Red I was gentle!~ Right [povname]?"
     nar "I'm not sure If I would consider what we did gentle, but I'm not about to argue."
     pov "yeah-"
+    hide bghosty tease
+    show bghosty smile
+    with dissolve
     gf "See!~"
+    hide blara worryb
+    show blara blush smile at left
+    with dissolve
     l "As long as [povname] enjoyed themselves..."
-    
-    
-    
-
-    
-
+    sa "Oh I'm sure they did. I could hear them down here over the speakers"
+    hide blara blush smile
+    show blara shoutb at left
+    with dissolve
+    l "S-Sakura."
+    sa "Don't pretend like you couldn't."
+    hide blara shoutb
+    show blara poutb at left
+    hide bghosty smile
+    show bghosty 
+    with dissolve
+    gf "Alright, that's enough chatting babes,we need to get things cleaned up for the night."
+    hide bghosty 
+    show bghosty wink
+    with dissolve
+    gf "[povname], Thank you for visiting the BBB, we hope you enjoyed your time here."
+    pov "Thank you, I uhm... appreciated the service?"
+    hide sak smug
+    show sak lewd at left
+    with dissolve 
+    sas "I'm sure you did."
+    hide bghosty wink
+    show bghosty smile
+    with dissolve
+    gf "Visit again any time hun, And give what I said a thought."
+    pov "I will, thank you again."
+    scene black with dissolve
+    nar "As the conversation died out I left the doors of the building I had been so scared to enter just hours before now a little sad to be leaving."
+    nar "..."
     jump end
 
 
@@ -1529,10 +1678,10 @@ label bbb_gl:
 
 #nar "The programmer has a nap. Hold out! Programmer!"
 
-#w end the game and return player to title
+#w Ending of the game, put credits here in the future!
     label end:
     #y__________________________Text For Valentines Demo_______________________________________
-    scene black with dissolve
+    scene message with dissolve
     l "This concludes the Valentines test demo."
     l "We here at HHS hope you enjoyed what's been presented. It's not much but this was a few months of learning and work"
     g "I'm sure they enjoyed what you 'Presented' to them on the bed."
@@ -1543,6 +1692,14 @@ label bbb_gl:
     #y -----------------------------------------------------------------------------------------
     nar "Please send a screen shot of this text box to @SM_pai. Lara love is [lara_love]. Ghosty love is [ghosty_love]. Lara date count is [lara_date_count]. Ghosty date count is [ghosty_date_count]. "
     nar "Thank you for playing<3! Tester can now has a nap. Rest Well! Tester!"
+    nar "..."
+    if lara_date_count >= ghosty_date_count:
+        l "Psst... Hey you still there [povname] ?"
+        l "There's a lot of name easter eggs to find!"
+        l "Here are 2 of the most interesting ones. Sm told me to tell you about them."
+        l "Try naming yourself 'Mlzrt' or 'Daddy'"
+        l "Okay. thank you for playing my route! Love you~! B-bye!"
+    scene black with dissolve
     #r this ends the game do not add anything after this point.
     return
 #y ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1552,24 +1709,17 @@ label bbb_gl:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-#name checker output for Final
+#w name checker output for Final
     label friendlyname:
         l "Oh! You have the same name as one of my friends"
         l "What a coincidence."
         l "..."
         l ";)"
         jump sohedoeshaveaname
+
+    label daddyname:
+        $ renpy.movie_cutscene("images/no.webm")
+        $ renpy.quit()
 
     label usedname:
         l "..."
@@ -1645,7 +1795,7 @@ label bbb_gl:
 
 
 #wBETA CODE LEFT IN WITH mlzrt EASTER EGG DO NOT TOUCH OR ADD CODE.
-#Original test code, might leave this in as an easter egg? maybe have pn "test" send you here?
+#b Original test code, might leave this in as an easter egg? maybe have pn "test" send you here?
     label beta:
 
     # Show a background. This uses a placeholder by default, but you can
@@ -1656,7 +1806,7 @@ label bbb_gl:
  
 
     # These display lines of dialogue.
-#name select, makes MC annon if no name is chosen
+#b name select, makes MC annon if no name is chosen
     $ povname = renpy.input("Okay, lets get this out of the way. What is your name?", length=20)
     $ povname = povname.strip()
 
@@ -1683,7 +1833,7 @@ label bbb_gl:
         #new line added post beta
         l "I'm happy to see you here again... We've been so lonely... so very lonely... won't you join us?"
         g "Is that some kind of reference?"
-#question choice path
+#b question choice path
     menu:
         "?"
 
@@ -1692,7 +1842,7 @@ label bbb_gl:
 
         "why are you a sketch?": 
             jump no1
-#Huh, That was pretty easy to get to work!
+#b Huh, That was pretty easy to get to work!
 
     label yes1:
 
@@ -1717,7 +1867,7 @@ label bbb_gl:
 
 
     jump end
-#Why Are You A Sketch?
+#b Why Are You A Sketch?
     label no1:
 
         l_shout "HUH?!"
@@ -1756,7 +1906,7 @@ label bbb_gl:
 
    
         jump end
-#beta name check
+#b beta name check
     label huh:
 
         l "Oh! You have the same name as one of my friends"
