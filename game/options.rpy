@@ -7,7 +7,7 @@
 
 ## Basics ######################################################################
 
-define config.name = _("Ghosty & Lara")
+define config.name = _("Ghosty&Lara")
 ## this is set to False to hide the title from the title screen
 define gui.show_name = False
 
@@ -28,7 +28,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Ghosty & Lara"
+define build.name = "Ghosty&Lara"
 
 
 ## Sounds and music ############################################################
