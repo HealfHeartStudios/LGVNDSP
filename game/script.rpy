@@ -1408,7 +1408,7 @@ label bbbs2:
     show bghosty smile
     with dissolve
     gf "that being said I wouldn't be opposed to another Night of fun aswell. It's not often Someone stays awake once I'm finished with them!~"
-    nar "That is 100% believable. I can feel my body begging for sleep as I listen to her speak."
+    nar "That is 100 percent believable. I can feel my body begging for sleep as I listen to her speak."
     gf "Here. hand me your phone."
     nar "I do as I'm told, I'm not gonna argue with the woman that just showed me nirvana. Even so I'm curious what she could need it for."
     pov "What for?"
@@ -1444,7 +1444,7 @@ label bbb_el:
     show blara blush smile with dissolve 
     l "W-well I guess It's time we say our goodbyes."
     
-    if drink == 1:
+    if drink == 0:
         show sak pout at left
         show bghosty wink at right
         with dissolve 
@@ -1544,7 +1544,7 @@ label bbb_el:
     with dissolve 
     l "[povname], Thank you for visiting the BBB, I really hope you enjoyed everything..."
     pov "I did, Thank you"
-    if drink == 1:
+    if drink == 0:
         hide sak smug
         show sak pout at left
         with dissolve 
@@ -1578,7 +1578,7 @@ label bbb_gl:
     gf "Okay love, I had a lot of fun tonight but It's time you head home.~"
     
     
-    if drink == 1:
+    if drink == 0:
         show sak pout at right
         with dissolve 
         sa "Not so fast wine abandoner!"
@@ -1607,12 +1607,12 @@ label bbb_gl:
     with dissolve
     l "S-sakura! C-can't you wait till they've left to ask Saki?"
     hide sak lewd
-    show sak pout at left
+    show sak pout at right
     show blara blush smile
     with dissolve 
     sa "No way. I need every detail right now."
     hide sak pout
-    show sak lewd at left
+    show sak lewd at right
     with dissolve 
     sa "Every. Detail."
     hide bghosty smile
@@ -1620,7 +1620,7 @@ label bbb_gl:
     with dissolve
     gf "Mmmm, Sorry Sakura I think you'll need to wait. If you want every detail we're gonna be here all night!~"
     hide sak lewd
-    show sak smug at left
+    show sak smug at right
     with dissolve 
     sa "Ooooo I'm excited!!"
     hide blara blush smile
@@ -1659,7 +1659,7 @@ label bbb_gl:
     gf "[povname], Thank you for visiting the BBB, we hope you enjoyed your time here."
     pov "Thank you, I uhm... appreciated the service?"
     hide sak smug
-    show sak lewd at left
+    show sak lewd at right
     with dissolve 
     sas "I'm sure you did."
     hide bghosty wink

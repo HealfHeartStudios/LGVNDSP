@@ -1,46 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-NameError: name 'sak' is not defined. Did you mean: 'say'?
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "game/script.rpy", line 1429, in script
-    sak "Not so fast ladykiller!~"
-Exception: Sayer 'sak' is not defined.
+  File "game/script.rpy", line 1623, in script
+    show sak smug at lright
+  File "game/script.rpy", line 1623, in <module>
+    show sak smug at lright
+                     ^^^^^^
+NameError: name 'lright' is not defined. Did you mean: 'right'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "renpy/ast.py", line 625, in eval_who
-    return renpy.python.py_eval(who)
-           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "game/script.rpy", line 1623, in script
+    show sak smug at lright
+  File "renpy/ast.py", line 1357, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 726, in show_imspec
+    at_list = [renpy.python.py_eval(i) for i in at_list]
+               ~~~~~~~~~~~~~~~~~~~~^^^                  
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "<none>", line 1, in <module>
-NameError: name 'sak' is not defined. Did you mean: 'say'?
+  File "game/script.rpy", line 1623, in <module>
+    show sak smug at lright
+                     ^^^^^^
+NameError: name 'lright' is not defined. Did you mean: 'right'?
 
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "game/script.rpy", line 1429, in script
-    sak "Not so fast ladykiller!~"
-  File "renpy/ast.py", line 2915, in execute
-    Say.execute(self)
-    ~~~~~~~~~~~^^^^^^
-  File "renpy/ast.py", line 956, in execute
-    who = eval_who(self.who, self.who_fast)
-          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 627, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'sak' is not defined.
-
-macOS-26.1-arm64-arm-64bit arm64
+Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Lara & Ghosty 0.1
-Fri Feb 13 13:43:42 2026
+Fri Feb 13 19:09:46 2026
