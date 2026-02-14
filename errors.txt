@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1110: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump bbbs2
-    ^
-
-File "game/script.rpy", line 1112: expected statement.
-    "How much of my imagination, exactly?":
-                                          ^
+File "game/script.rpy", line 1110: end of line expected.
+    jump bbbs2a:
+               ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sat Feb 14 03:53:43 2026
+Sat Feb 14 03:57:17 2026

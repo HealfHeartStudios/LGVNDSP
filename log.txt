@@ -1,17 +1,29 @@
-2026-02-14 09:53:42 UTC
+2026-02-14 09:59:02 UTC
 Windows-10-10.0.19045-SP0
 Ren'Py 8.4.1.25072401
 
-Early init took 56 ms
-Loading error handling took 28 ms
-Loading script took 309 ms
+Early init took 54 ms
+Loading error handling took 42 ms
+Loading script took 1412 ms
 Loading save slot metadata took 29 ms
 Loading persistent took 0 ms
-
-File "game/script.rpy", line 1110: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump bbbs2
-    ^
-
-File "game/script.rpy", line 1112: expected statement.
-    "How much of my imagination, exactly?":
-                                          ^
+Running init code took 49 ms
+Loading analysis data took 4 ms
+Analyze and compile ATL took 3 ms
+Reloading save slot metadata took 15 ms
+Backing up script files to 'C:\\Users\\dirka\\AppData\\Roaming/RenPy/backups\\LGVNDSP':
+Dump and make backups took 59 ms
+Cleaning cache took 1 ms
+Making clean stores took 0 ms
+Initial gc took 50 ms
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 205 ms
+Init translation took 0 ms
+Cleaning stores took 0 ms
+Load screen analysis took 0 ms
+Analyze screens took 10 ms
+Save screen analysis took 11 ms
+Save pyanalysis took 4 ms
+Save bytecode took 22 ms

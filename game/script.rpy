@@ -1102,12 +1102,12 @@ label bbbs:
             gf "So getting back on topic... I'd Love to get to know your desires better..."
             gf "So tell me.. what is your wildest fantasy?"
             $ fantasy = renpy.input("So tell me.. what is your wildest fantasy?", length=45)
-    $ fantasy = fantasy.strip()
+            $ fantasy = fantasy.strip()
 
-    if not fantasy:
-        $ fantasy = "Getting the soul sucked out of my body"
+            if not fantasy:
+                $ fantasy = "Getting the soul sucked out of my body"
 
-            jump bbbs2
+            jump bbbs2a
 
         "How much of my imagination, exactly?":
             $ ghosty_love = ghosty_love + 2
@@ -1134,12 +1134,12 @@ label bbbs:
             with dissolve
             gf "So tell me.. what is your wildest fantasy?"
             $ fantasy = renpy.input("So tell me.. what is your wildest fantasy?", length=45)
-    $ fantasy = fantasy.strip()
+            $ fantasy = fantasy.strip()
 
-    if not fantasy:
-        $ fantasy = "Getting the soul sucked out of my body"
+            if not fantasy:
+                $ fantasy = "Getting the soul sucked out of my body"
 
-    jump bbbs2a
+            jump bbbs2a
 label bbbs2a:
     hide blara smile
     show blara blush smile at left
@@ -1150,6 +1150,7 @@ label bbbs2a:
 
     gf "Hot."
     jump bbbs2  
+    
 label bbbs2:
     hide blara pout
     hide blara blush smile
