@@ -1321,8 +1321,8 @@ label bbbs2:
                 yalign 0.6
             nar"As my head snaps to her chest Saki lets out a small laugh."
             gf "I love when they know what they want."
-            gf "I should have guest, I saw you staring at them from the stage..."
-            gf "you know, You don't have to JUST stare."
+            gf "I should have guessed, I saw you staring at them from the stage..."
+            gf "you know, you don't have to JUST stare."
 
 
         "I can't help but look at those killer thighs.":
@@ -1331,8 +1331,9 @@ label bbbs2:
             show g cg 1 2 with move:
                 yalign 1.0
             nar"As my head snaps to her thighs Saki lets out a small laugh."
-            gf "I love when they know what they want."
-            gf "Although, if you're a thigh person I'm truly shocked you picked me. must be some other reason~! You got a kink for demon girls?"
+            gf "I love it when they know what they want."
+            gf "Although if you're a thigh person I'm truly shocked you picked me over Lara. It must have been for some other reason~!"
+            gf "You got a kink for demon girls?"
             nar "I feel it's in my best interest to not answer that."
             gf "Let me show you what we do best~."
             
@@ -1372,7 +1373,7 @@ label bbbs2:
     pov "?"
     scene g cg 2 2 with dissolve
     gf "You know, your biggest fantasy. I mean I think we could start with something smaller, don't want to end our fun too quick."
-    gf "But '[fantasy]'... I think I can find a way to satisfy that craving in my own special way~."
+    gf "But '[fantasy]'... I think I can find a way to satisfy that craving of yours in my own special way~."
     nar "The next few minutes are a blur, Saki may truly be the best there is at what she does."
     nar "Every movement she makes feels rehersed to a masterful level. It's like she was made for this."
     scene black with dissolve
