@@ -214,7 +214,7 @@ label intro2:
     hide sak lewd
     show sak smug
     with dissolve
-    sa "Oh? Do I see hope in your eyes? What a brave pupal I've trained."
+    sa "Oh? Do I see hope in your eyes? What a brave pupil I've trained."
     nar "Okay, yeah she's a little weird."
     sa "Well, I'll leave you be for now~! Break a leg Ladykiller!"
     hide sak smug with dissolve
@@ -235,11 +235,11 @@ label intro2:
     nar "Curse that stupid wine glass and it's ability to make me lose my concentration."
     #w Cg with ghosty winking at camera lara looking at her worried!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     scene lg cg 1 3 with dissolve
-    nar "As I'm thinking of ways to attempt to hurt an innanimate objects feelings, are they... looking at me?"
+    nar "As I'm thinking of ways to attempt to hurt an inanimate object's feelings, are they... looking at me?"
     nar "Before I can wonder too long, the demon girl locks eyes with me."
     scene lg cg 1 4 with dissolve
     nar "Is she... calling me up to her?"
-    nar "Sakura said she's the owners daughter right? Oh shit did I do something wrong???"
+    nar "Sakura said she's the owner's daughter right? Oh shit did I do something wrong???"
     nar "I can feel my anxiety well up once more, Maybe you're NOT supposed to stare? How could you manage that? Is it what I'm wearing? Is it not classy enough?"
     nar "Could she sense my hostility towards the top heavy liquid holder? (still working on those insults)"
     nar "Maybe she's not..."
@@ -343,12 +343,12 @@ label meetingthegirls:
     show blara worryb at left
     with dissolve
     l "W-What?? You're the one who wanted them to come up here?!"
-    nar "Lara's face flushes red, at first glance it's easy to tell she's these two get along well, but not without a little teasing"
+    nar "Lara's face flushes red, at first glance it's easy to tell these two get along well, but not without a little teasing"
     hide bghosty tease
     show bghosty at right
     with dissolve
     gf "{i}*Sigh*{/i}"
-    gf "You're no fun red."
+    gf "You're no fun Red."
 
     if ghosty_love >= lara_love:
         hide blara worryb
@@ -457,7 +457,7 @@ label sohedoeshaveaname:
     hide blara worryb
     show blara conf at left
     with dissolve
-    nar "Lara looks nearly as confused as I do, but I'm happy to know I misunderstood the situation. This seems far more lighthearted than the senarios I was expecting."
+    nar "Lara looks nearly as confused as I do, but I'm happy to know I misunderstood the situation. This seems far more lighthearted than the scenarios I was expecting."
     hide bghosty fsmile
     show bghosty smile at right
     with dissolve
@@ -480,7 +480,7 @@ label sohedoeshaveaname:
     show bghosty at right
     with dissolve
     l_shout "I-I was not!"
-    nar "Lara's previous calm nature explodes, I could swear her eyes were glowing as she spoke from how the lights of the club reflected off them."
+    nar "Lara's previous calm nature explodes, I could swear her eyes were glowing from how the lights of the club reflected off them as she spoke ."
     hide blara mad
     show blara pout at left
     hide bghosty
@@ -687,7 +687,7 @@ label bbbl2:
     scene bbb stairs with dissolve
     nar "Without further warning Lara grabs my hand and begins leading me to a door with a sign reading 'Staff Only' "
     scene bbb stairs2 with dissolve
-    nar "As she unlocks the door to the private room upstairs I can hear her breath becoming more heavy. Maybe I missread the conversation and Saki really was getting under her skin?"
+    nar "As she unlocks the door to the private room upstairs I can hear her breath becoming more heavy. Maybe I misread the conversation and Saki really was getting under her skin?"
 #r LC1
     menu:
         "Should I say something?"
@@ -805,7 +805,7 @@ label bbbl4:
     nar "Holy."
     nar "Shit."
     nar "My mother warned me about a lot of things, this situation is not one of them."
-    nar "I mean, we went up here for a private show but with how casual thing had been I was not mentally prepared to be greeted by easily the nicest ass I have ever seen in my life."
+    nar "I mean, we went up here for a private show but with how casual things had been I was not mentally prepared to be greeted by easily the nicest ass I have ever seen in my life."
     l "Hello?~ Earth to [povname]? You still in there?"
     pov "I uhm-"
     menu:
@@ -937,7 +937,7 @@ label bbbl6:
     l "I hope you're not just saying that because you think it's what I want to hear~!"
     pov "I could never!"
     scene black with dissolve
-    nar "We both laugh as we continue our conversation. With how it started the is far from how I expected the night to go, and even further from how I expected Lara to be."
+    nar "We both laugh as we continue our conversation. With how it started this is far from how I expected the night to go, and even further from how I expected Lara to be."
     nar "She seems like such a fun person, I wish I had the time to get to know her better but all good things must come to an end."
     scene bbb privateroom with dissolve
     show blara worry with dissolve
@@ -966,7 +966,7 @@ label bbbl6:
     show blara pout
     with dissolve
     l "{i} Ahh never mind. {/i}"
-    nar "That wasn't even what I meant, but it seems the truth always comes to the light."
+    nar "That wasn't even what I meant, but it seems the truth always comes to light."
     hide blara pout
     show blara worry
     with dissolve
@@ -1029,7 +1029,7 @@ label bbbs:
     show blara at left
     with dissolve
     l_whisper "Agreed, Saki is pretty aluring.~"
-    nar "Lara smiles, she's obviously being honest but suprisingly she seems a little dissapointed in my answer. It's obvious she doesn't take disapointment well."
+    nar "Lara smiles, she's obviously being honest but suprisingly she seems a little disappointed in my answer. It's obvious she doesn't take disappointment well."
     hide bghosty smile
     show bghosty wink at right
     with dissolve
@@ -1087,11 +1087,11 @@ label bbbs:
             pov  "What an amazing night to feel cursed."
             nar "The sentence slips out of my mouth without much thought especially not to how random it seems out of context. If this kind of 'Demon' is interested in me, Maybe curses aren't that bad."
             hide blara 
-            show blara wink at left
+            show blara smug at left
             with dissolve
             l "Oooo, gaming references while talking to a hot girl? I like you."
             nar "Saki blankly stares as me and Lara go back and forth for a second about gaming."
-            hide blara think
+            hide blara smug
             show blara pout at left
             hide bghosty smile
             show bghosty judge at right
@@ -1099,6 +1099,14 @@ label bbbs:
             gf "You're both so... odd..."
             nar "Hmm, Guess gaming isn't Saki's thing."
             $ lara_love = lara_love + 1
+            gf "So getting back on topic... I'd Love to get to know your desires better..."
+            gf "So tell me.. what is your wildest fantasy?"
+            $ fantasy = renpy.input("So tell me.. what is your wildest fantasy?", length=45)
+    $ fantasy = fantasy.strip()
+
+    if not fantasy:
+        $ fantasy = "Getting the soul sucked out of my body"
+
             jump bbbs2
 
         "How much of my imagination, exactly?":
@@ -1268,7 +1276,7 @@ label bbbs2:
     gf "But I want to give you a true taste of what the BBB can provide~! It's the least I could do as the owner's daughter. If you'll allow me of course."
     nar "I shake my head in a gentle nod as I stare into the flaming eyes of the woman before me."
     nar "Without further warning Saki moved into my lap, Her soft thighs wrapping around my waist "
-    nar "The sudeen heat of her body against mine is nearly too much. The sensation making my mind blur for a moment before I came back to the reality of whats happening."
+    nar "The sudden heat of her body against mine is nearly too much. The sensation making my mind blur for a moment before I came back to the reality of whats happening."
 
     show g cg 1 with fade:
         yalign 1.0
@@ -1385,7 +1393,7 @@ label bbbs2:
     show bghosty smile
     with dissolve
     nar "Soon Saki returns to the bed side, She's so full of energy even while I'm still trying to catch my breath. She's truly on a different level."
-    gf "Sorry it took so long, Had to fix up my body makeup after the shower, it's supposed to be water proof but It still runs from time to time. gotta keep up the illusion four the audience you know?"
+    gf "Sorry it took so long, Had to fix up my body makeup after the shower, it's supposed to be water proof but It still runs from time to time. gotta keep up the illusion for the audience you know?"
     pov "You...You're fine I'm just now catching my breath."
     hide bghosty smile
     show bghosty wink
@@ -1553,7 +1561,7 @@ label bbb_el:
         hide sak pout
         show sak smug at left
         with dissolve 
-    #o could be an issue. unsure atm 2/13/2026
+    #o could be an issue. unsure atm 2/13/2026. IT WAS NOT AN ISSUE FUCK YEAH!!!!!!!!!!!!
     l "And uh, Remember to think about those numbers I gave you... both of them. please?"
     pov "I will, thank you again. I had a lot of fun tonight"
     scene black with dissolve
