@@ -19,8 +19,8 @@ define gf_whisper = Character("Saki O'hara", who_color="#a900af", what_size=18)
 #w Side Characters
 define f = Character("Fanta O'hara", who_color="#d47100")
 define s = Character("Spirit O'hara", who_color="#c55ca6")
-define sa = Character("Sakura", who_color="#ff8292")
-define sas = Character("Sakura", who_color="#ff8292", what_size=18)
+define sa = Character("Sakura Tatebayashi", who_color="#ff8292")
+define sas = Character("Sakura Tatebayashi", who_color="#ff8292", what_size=18)
 #w PC related Characters
 define nar = Character(what_italic=True)
 define pov = Character("[povname]", color="#faf0f0")
@@ -383,11 +383,10 @@ label namecheckcode:
     if not povname:
         $ povname = "The Slayer Of Wine Glasses"  
 
-    if povname in [ "MKscorp", "Iffy", "Hatchet", "Reese", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
+    if povname in [ "MKscorp", "Iffy", "Hatchet-Ears", "Reese", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
         jump friendlyname
 
-
-    if povname in [ "ScarletRose", "Scarlet Rose", "scarletrose", "scarlet rose", "Lara Chiba", "Ghosty O'hara", "Fanta O'hara", "Spirit O'hara", "Saki O'hara", "Skyla Chiba", "Sakura"]:
+    if povname in [ "ScarletRose", "Scarlet Rose", "scarletrose", "scarlet rose", "Lara Chiba", "Ghosty O'hara", "Fanta O'hara", "Spirit O'hara", "Saki O'hara", "Skyla Chiba", "Sakura Tatebayashi"]:
         jump usedname
 
     if povname in [ "Itzumi"]:
