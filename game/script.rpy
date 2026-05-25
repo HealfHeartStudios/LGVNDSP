@@ -38,6 +38,7 @@ default drink = 0
 default lara_date_count = 0
 default ghosty_date_count = 0
 default wf = 0
+default date_1=0
 #w ------------------------------------------------------------------------------------------------------------------------------------------------
 #w May not be needed. do not delete just incase. I have no clue what the fuck im doing.
 #w ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1149,7 +1150,7 @@ label bbbs2a:
 
     gf "Hot."
     jump bbbs2  
-    
+
 label bbbs2:
     hide blara pout
     hide blara blush smile
@@ -1568,7 +1569,7 @@ label bbb_el:
     nar "As the conversation died out I left the doors of the building I had been so scared to enter just hours before now a little sad to be leaving."
     nar "..."
 
-    jump end
+    jump night1
 
 #w_________________________________________________________________
 #w_________________________________________________________________
@@ -1679,13 +1680,85 @@ label bbb_gl:
     scene black with dissolve
     nar "As the conversation died out I left the doors of the building I had been so scared to enter just hours before now a little sad to be leaving."
     nar "..."
-    jump end
+    jump night1
+#w
+#w
+#w Start of night 1 for both characters
+#w
+#w
+#w
+
+label night1:
+    scene black with dissolve
+    nar "The ride home was filled with nearly endless thoughts and vivid memories of the night I had just experienced."
+    nar "Even now as I lay in bed staring at my cieling I can't get the thought out of my head…"
+    if lara_date_count >= ghosty_date_count:
+        nar "..."
+        scene lnumss with dissolve
+        pause
+    else:
+        nar "..."
+        scene gnumss with dissolve
+        pause
+    show black with dissolve
+    nar "Unable to fall asleep I flip open my phone, viewing the two newly added contacts. I never expected to be faced with a decision like this… who should I text?"
+
+#w split path starts here!
+    menu:
+        "Who Should I text?"
+
+        "Lara.":
+            jump ldate2_1
+
+        "Saki.": 
+            jump sdate2_1
+
+
+#r Lara Date 2!
+label ldate2_1:
+    if lara_date_count >= ghosty_date_count:
+        nar "Despite what Lara said… I don't really feel the drive tonight to message Saki."
+        nar "The message I type is simple, and to the point, I don't have the energy for anything else."
+        scene d1ld2lm1 with dissolve
+        pause
+        scene black with dissolve
+        nar "As soon as I hit send I lay my phone down. It's already 2 in the morning I doubt Lara is awake and even if she is im scared to see the respo-"
+        nar "Before my mind can get too worried, I hear a buzz."
+        nar "Then Another."
+        nar "And Another..."
+        scene d1ld2lm2 with dissolve
+        pause
+        nar "I smile as the messages come in. She's just as energetic over text as she is in person."
+        scene d1ld2lm3 with dissolve
+        pause
+        nar "With that, I set my phone down and attempt to fall asleep…"
+        jump ldate2_2
+
+
+    else:
+        nar "I can still barely feel my lower half after my night with saki, maybe it would be best to take her advice and text Lara."
+        nar "The message I type is simple, and to the point, I don't have the energy for anything else"
+        scene d1gd2lm1 with dissolve
+        pause
+        scene black with dissolve
+        nar "As soon as I hit send I lay my phone down. It's already 3 in the morning I doubt Lara is awake and even if she is im scared to see the respo-"
+        nar "Before my mind can get too worried, I hear a buzz."
+        nar "Then Another."
+        nar "And Another..."
+        scene d1gd2lm2 with dissolve
+        pause
+        nar "For how shy she seemed when we first met she seems very energetic over text."
+        scene d1gd2lm3 with dissolve
+        pause
+        nar "She plays games? Well atleast I know we will have something in common to talk about tommorow."
+        scene black with dissolve
+        nar "As I set my phone down I quickly fall asleep, my dreams filled with visions of how the Date might go..."
+        jump ldate2_2  
+label ldate2_2:
 
 
 
 
-
-#nar "The programmer has a nap. Hold out! Programmer!"
 
 #w Ending of the game, put credits here in the future!
     label end:

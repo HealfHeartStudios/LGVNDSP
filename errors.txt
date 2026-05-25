@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1110: end of line expected.
-    jump bbbs2a:
-               ^
+File "game/script.rpy", line 1757: expected ':' not found.
+    label ldate2_2
+                  ^
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Sat Feb 14 03:57:17 2026
+Mon May 25 02:46:31 2026

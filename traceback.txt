@@ -1,41 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1090, in script
-    show blara wink at left
-Exception: Image 'blara' does not accept attributes 'wink'.
+NameError: name 'Nar' is not defined. Did you mean: 'nar'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 1723, in script
+    Nar "As soon as I hit send I lay my phone down. It's already 2 in the morning I doubt Lara is awake and even if she is im scared to see the respo-"
+Exception: Sayer 'Nar' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 1090, in script
-    show blara wink at left
-  File "renpy/ast.py", line 1357, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "renpy/ast.py", line 730, in show_imspec
-    renpy.config.show(
-    ~~~~~~~~~~~~~~~~~^
-        name, at_list=at_list, layer=layer, what=expression, zorder=zorder, tag=tag, behind=behind, atl=atl
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    )
-    ^
-  File "renpy/exports/displayexports.py", line 486, in show
-    if not base.find_target() and renpy.config.missing_show:
-           ~~~~~~~~~~~~~~~~^^                               
-  File "renpy/display/image.py", line 444, in find_target
-    self.target = target._duplicate(a)
-                  ~~~~~~~~~~~~~~~~~^^^
-  File "renpy/display/displayable.py", line 253, in _duplicate
-    args.extraneous()
-    ~~~~~~~~~~~~~~~^^
-  File "renpy/display/displayable.py", line 110, in extraneous
-    raise Exception(
-    ...<4 lines>...
-    )
-Exception: Image 'blara' does not accept attributes 'wink'.
+  File "renpy/ast.py", line 625, in eval_who
+    return renpy.python.py_eval(who)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<none>", line 1, in <module>
+NameError: name 'Nar' is not defined. Did you mean: 'nar'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 1723, in script
+    Nar "As soon as I hit send I lay my phone down. It's already 2 in the morning I doubt Lara is awake and even if she is im scared to see the respo-"
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 956, in execute
+    who = eval_who(self.who, self.who_fast)
+          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 627, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Nar' is not defined.
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Ghosty&Lara 0.1
-Sat Feb 14 17:08:04 2026
+Mon May 25 02:11:28 2026
