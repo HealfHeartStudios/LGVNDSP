@@ -1710,7 +1710,8 @@ label night1:
         "Lara.":
             jump ldate2_1
 
-        "Saki.": 
+#Change option text in final!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        "Saki. (non functional atm)": 
             jump sdate2_1
 
 
@@ -1755,13 +1756,41 @@ label ldate2_1:
         nar "As I set my phone down I quickly fall asleep, my dreams filled with visions of how the Date might go..."
         jump ldate2_2  
 label ldate2_2:
+        nar "Programmer Has a nap! Hold Out! Programer!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 #w Ending of the game, put credits here in the future!
-    label end:
+label end:
     #y__________________________Text For Valentines Demo_______________________________________
     scene message with dissolve
     l "This concludes the Valentines test demo."

@@ -2,9 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1757: expected ':' not found.
-    label ldate2_2
-                  ^
+File "game/script.rpy", line 1793: Indentation mismatch.
+    label end:
 
 Ren'Py Version: Ren'Py 8.4.1.25072401
-Mon May 25 02:46:31 2026
+Tue May 26 00:12:31 2026
