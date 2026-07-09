@@ -13,9 +13,9 @@ define gu = Character("???", color="#a900af")
 define g = Character("Ghosty O'hara", color="#a900af")
 define g_shout = Character("Ghosty O'hara", who_color="#a900af", what_size=50)
 define g_whisper = Character("Ghosty O'hara", who_color="#a900af", what_size=18)
+#w ghostyfake/Saki
 define gf = Character("Saki O'hara", color="#a900af")
 define gf_whisper = Character("Saki O'hara", who_color="#a900af", what_size=18)
-#w ghostyfake/Saki
 #w Side Characters
 define f = Character("Fanta O'hara", who_color="#d47100")
 define s = Character("Spirit O'hara", who_color="#c55ca6")
@@ -38,7 +38,12 @@ default drink = 0
 default lara_date_count = 0
 default ghosty_date_count = 0
 default wf = 0
+#w for Date var. 0 is Lara 1 is Ghosty.
 default date_1=0
+default date_2=0
+default val_choice=0
+default date_3=0
+default path=0
 #w ------------------------------------------------------------------------------------------------------------------------------------------------
 #w May not be needed. do not delete just incase. I have no clue what the fuck im doing.
 #w ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -393,7 +398,7 @@ label namecheckcode:
     if povname in [ "Itzumi"]:
         jump itzuname
 
-    if povname in [ "Mari"]:
+    if povname in [ "Marramir"]:
         jump marname
 
     if povname in [ "Vega Chiba"]:
@@ -445,8 +450,6 @@ label sohedoeshaveaname:
         l "I think it suits you. It's a great name."
         nar "Lara speaks with a soft smile, her words are genuine"
         
-
-
     hide bghosty
     hide bghosty judge 
     hide bghosty tease
@@ -509,15 +512,17 @@ label sohedoeshaveaname:
             $ lara_love = lara_love + 3
             $ ghosty_love = ghosty_love + 1
             $ lara_date_count = lara_date_count + 1
+            $ date_1 = 0
             jump bbbl
 
         "I can't deny the alure of a Demon girl, Saki is more my type.": 
             $ ghosty_love = ghosty_love + 2
             $ ghosty_date_count = ghosty_date_count + 1
+            $ date_1 = 1
             jump bbbs
 
 #w------------------------------------------------------------------------------------------------------------------------------------------------
-#w  After this point the player has chosen Either Ghosty or Lara
+#w  After this point the player has chosen Either Ghosty or Lara for the first date. do not put any path dia above this line!
 #w------------------------------------------------------------------------------------------------------------------------------------------------
 
 #r------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1820,6 +1825,47 @@ label end:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #w name checker output for Final
     label friendlyname:
         l "Oh! You have the same name as one of my friends"
@@ -1889,17 +1935,6 @@ label end:
         l "How are Willow and Morgan? Still hot?"
         jump sohedoeshaveaname
     #Name Ch
-
-
-
-
-
-
-
-
-
-
-
 
 
 
