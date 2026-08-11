@@ -1761,6 +1761,12 @@ label ldate2_1:
         nar "As I set my phone down I quickly fall asleep, my dreams filled with visions of how the Date might go..."
         jump ldate2_2  
 label ldate2_2:
+        
+
+
+
+
+
         nar "Programmer Has a nap! Hold Out! Programer!"
 
 
