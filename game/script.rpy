@@ -410,13 +410,10 @@ label namecheckcode:
     if povname in ["Angeline"]:
         jump angname
 
-    if povname in ["Genie"]:
-        jump geniename
-
     if povname in ["Shikki"]:
         jump shikkiname
 
-    if povname in ["Genie"]:
+    if povname in ["Genie","Toomzx"]:
         jump geniename
 
     if povname in ["Shiori Fujisaki","Monika","Yuri","Natsuki","Sayori"]:
