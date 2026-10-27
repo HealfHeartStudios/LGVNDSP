@@ -389,7 +389,7 @@ label namecheckcode:
     if not povname:
         $ povname = "The Slayer Of Wine Glasses"  
 
-    if povname in [ "MKscorp", "Iffy", "Hatchet-Ears", "Reese", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
+    if povname in [ "MaiMelons", "MKscorp", "Iffy", "Hatchet-Ears", "Reese", "AnimeGeorge2001", "SaiSuta", "Zero-Q", "SadBoiOnline", "Ricky Dupon", "Minner", "Befortuned", "Lxxi", "Staz", "Silvie", "Jorn"]:
         jump friendlyname
 
     if povname in [ "ScarletRose", "Scarlet Rose", "scarletrose", "scarlet rose", "Lara Chiba", "Ghosty O'hara", "Fanta O'hara", "Spirit O'hara", "Saki O'hara", "Skyla Chiba", "Sakura Tatebayashi"]:
@@ -410,7 +410,7 @@ label namecheckcode:
     if povname in ["Angeline"]:
         jump angname
 
-    if povname in ["Shikki"]:
+    if povname in ["Shikki","XxM0chaL0veR420xX"]:
         jump shikkiname
 
     if povname in ["Genie","Toomzx"]:
@@ -1495,7 +1495,7 @@ label bbb_el:
     hide bghosty wink
     show bghosty fsmile at right
     with dissolve 
-    gf "Sakura I want to know too but if we make Lara explain in front of [povname] I think she might melt into a puddle of embarasment."
+    gf "Sakura I want to know too but if we make Lara explain in front of [povname] I think she might melt into a puddle of embarrassment."
     hide sak smug
     show sak pout at left
     hide bghosty fsmile 
@@ -1949,7 +1949,7 @@ label end:
 
 
 
-#wBETA CODE LEFT IN WITH mlzrt EASTER EGG DO NOT TOUCH OR ADD CODE.
+#w BETA CODE LEFT IN WITH mlzrt EASTER EGG DO NOT TOUCH OR ADD TO THIS CODE.
 #b Original test code, might leave this in as an easter egg? maybe have pn "test" send you here?
     label beta:
 
