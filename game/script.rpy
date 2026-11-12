@@ -1766,6 +1766,30 @@ label ldate2_1:
 
 
 label ldate2_2:
+    
+    nar "I am awoken from sleep by the buzzing of the alarm on my phone."
+    nar "I wipe the sleep from my eyes as I pick up my phone to check any notifications I recieved during the night."
+    nar "despite her claims of 'not being a morning person' she was up super early this morning. She had already sent the location, and a time we should meet up before I even got out of bed."
+    nar "My Mother always said it was rude to make a lady wait, after a few moments to prepare myself I rise out of bed, eat breakfast and begin the trip to the park Lara wanted to meet at."
+
+    scene parkd1 with dissolve
+
+    show lara
+    l_shout "hey!~"
+    hide lara
+    show lara mad
+    l "You know its rude to keep a lady waiting don't you?"
+    hide lara mad
+    show lara pout
+    Nar "Oh God. Mom would be so disapointed."
+    Nar "I frantically check my phone for the time, Did I read her message wrong or-"
+    hide lara pout
+    show lara smug
+    l "hey dude, Im just messing with you. No need to panic."
+    hide lara smug
+    show lara 
+    l "Although I do appreciate that it seemed like you really cared..."
+    l "You're kinda cute when you panic."
 
 
 
