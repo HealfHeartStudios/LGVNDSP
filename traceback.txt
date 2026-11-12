@@ -1,23 +1,46 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1723, in script
-    jump sdate2_1
-renpy.script.LabelNotFound: could not find label 'sdate2_1'. Did you mean: 'ldate2_1'?
+NameError: name 'Nar' is not defined. Did you mean: 'nar'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 1784, in script
+    Nar "Oh God. Mom would be so disapointed."
+Exception: Sayer 'Nar' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 1723, in script
-    jump sdate2_1
-  File "renpy/ast.py", line 1928, in execute
-    rv = renpy.game.script.lookup(target)
-         ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
-  File "renpy/script.py", line 1161, in lookup
-    raise LabelNotFound(original)
-renpy.script.LabelNotFound: could not find label 'sdate2_1'. Did you mean: 'ldate2_1'?
+  File "renpy/ast.py", line 625, in eval_who
+    return renpy.python.py_eval(who)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "renpy/python.py", line 1292, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/python.py", line 1285, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+           ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<none>", line 1, in <module>
+NameError: name 'Nar' is not defined. Did you mean: 'nar'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "game/script.rpy", line 1784, in script
+    Nar "Oh God. Mom would be so disapointed."
+  File "renpy/ast.py", line 2915, in execute
+    Say.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "renpy/ast.py", line 956, in execute
+    who = eval_who(self.who, self.who_fast)
+          ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "renpy/ast.py", line 627, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'Nar' is not defined.
 
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Ghosty&Lara 0.1
-Wed Nov 11 23:20:19 2026
+Thu Nov 12 03:18:54 2026

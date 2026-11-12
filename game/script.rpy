@@ -1781,8 +1781,8 @@ label ldate2_2:
     l "You know its rude to keep a lady waiting don't you?"
     hide lara mad
     show lara pout
-    Nar "Oh God. Mom would be so disapointed."
-    Nar "I frantically check my phone for the time, Did I read her message wrong or-"
+    nar "Oh God. Mom would be so disapointed."
+    nar "I frantically check my phone for the time, Did I read her message wrong or-"
     hide lara pout
     show lara smug
     l "hey dude, Im just messing with you. No need to panic."
@@ -1790,7 +1790,8 @@ label ldate2_2:
     show lara 
     l "Although I do appreciate that it seemed like you really cared..."
     l "You're kinda cute when you panic."
-
+    scene error
+    pause
 
 
 
@@ -1822,7 +1823,7 @@ label ldate2_2:
 
 
 # put number based on where at atm
-label ldate2_
+label ldate2_00000:
 
         
 
