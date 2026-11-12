@@ -1788,8 +1788,39 @@ label ldate2_2:
     l "hey dude, Im just messing with you. No need to panic."
     hide lara smug
     show lara 
-    l "Although I do appreciate that it seemed like you really cared..."
-    l "You're kinda cute when you panic."
+    pov "Oh thank god, I got here as fast as I could."
+    l "Oh? There was no need to rush I would have happily waited for you."
+    l "Although I do appreciate that it seems like you really care..."
+    l "You look great by the way, Did you get all dressed up for me?"
+
+    menu:
+        "Did you get all dressed up for me?"
+
+        "Of course, A date with you is something to get dressed up for.":
+            $ lara_love = lara_love + 1
+            jump ldate2_3
+
+        "No, I always dress like this on weekends.": 
+            $ lara_love = lara_love - 1
+            pov "No, I always dress like this on weekends."
+            l "..."
+            L "sure."
+            jump ldate2_3
+
+label ldate2_3
+    l "If I would have know you were going to take this so seriously I might have thrown something more fancy on."
+    hide lara
+    show lara think
+    l "though to be honest, I don't really own much “Dress” clothing."
+    hide lara think
+    show lara
+    l "Unless you count Black leggings as fancy."
+    l "Honestly, the most `Fancy` piece of clothing I own is my BBB uniform"
+    
+    l "I'm not really sure a Bunny suit would be very apropriate for a park date..."
+    l "Maybe if only you could see me."
+    nar "Being the only person who could see her in a bunny suit sounds like something out of a dream..."
+    pov "You don't need fancy clothes to be beautiful, you already are."
     scene error
     pause
 
