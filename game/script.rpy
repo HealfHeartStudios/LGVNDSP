@@ -1816,11 +1816,20 @@ label ldate2_3
     show lara
     l "Unless you count Black leggings as fancy."
     l "Honestly, the most `Fancy` piece of clothing I own is my BBB uniform"
-    
+    hide lara
+    show lara worryb
     l "I'm not really sure a Bunny suit would be very apropriate for a park date..."
+    hide lara worryb
+    show lara blush smile
     l "Maybe if only you could see me."
     nar "Being the only person who could see her in a bunny suit sounds like something out of a dream..."
     pov "You don't need fancy clothes to be beautiful, you already are."
+    l "Awwww, Thank you!~"
+    l "This type of clothing is much more comfortable anyways, especially for a day out."
+    hide lara blush smile
+    show lara blush
+    l "You have NO idea how hot those uniforms get."
+
     scene error
     pause
 
