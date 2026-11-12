@@ -1,14 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1714, in script
+  File "game/script.rpy", line 1723, in script
     jump sdate2_1
 renpy.script.LabelNotFound: could not find label 'sdate2_1'. Did you mean: 'ldate2_1'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 1714, in script
+  File "game/script.rpy", line 1723, in script
     jump sdate2_1
   File "renpy/ast.py", line 1928, in execute
     rv = renpy.game.script.lookup(target)
@@ -20,4 +20,4 @@ renpy.script.LabelNotFound: could not find label 'sdate2_1'. Did you mean: 'ldat
 Windows-10-10.0.19045-SP0 AMD64
 Ren'Py 8.4.1.25072401
 Ghosty&Lara 0.1
-Mon May 25 23:38:51 2026
+Wed Nov 11 23:20:19 2026

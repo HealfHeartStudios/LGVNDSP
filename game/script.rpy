@@ -68,13 +68,13 @@ label start:
     #w jump to send to the tech demo, should be commented out for final build
     #w jump Beta
     scene message with dissolve
-
-    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Feb 13th."
-    g "Both full first dates are mostly complete. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly means you don't get to hear my moans."
+    l "This game is a work in progress started on 2025 Nov 8. last updated 2026 Nov 11th."
+    g "Both full first dates are complete text wise, minus some last minute changes that may occur. Backgrounds are unfinished and audio is still missing from the game confusing which Sadly means you don't get to hear my moans."
     l "Maybe next time ;)."
     g "Thank you for testing, please report any issues to SM_pai in DM's! remember this is a private test build! Do not post SS or any content from these builds in public places. We want the plot to be a surprise!"
     l "If you all behave maybe I'll give all the testers a little something special in game when the final build comes along~!"
-    g "Welcome to the Valentines private test build! Thank you for your time."
+    g "Welcome to the next level"
+    l "was that a SEGA reference??? I'm SO proud of you!"
 
 label Intro:
     scene bbb outside with fade
@@ -1723,7 +1723,7 @@ label night1:
             jump sdate2_1
 
 
-#r Lara Date 2!
+#r Lara Park Date! Date 2!
 label ldate2_1:
     if lara_date_count >= ghosty_date_count:
         nar "Despite what Lara said… I don't really feel the drive tonight to message Saki."
@@ -1763,14 +1763,62 @@ label ldate2_1:
         scene black with dissolve
         nar "As I set my phone down I quickly fall asleep, my dreams filled with visions of how the Date might go..."
         jump ldate2_2  
+
+
 label ldate2_2:
+
+
+
+
+
+
+    menu:
+        "Which drink should I pick?"
+
+        "Water":
+            jump ldate2_2
+
+        "Soda": 
+            jump ldate2_2
+
+        "Milk":
+            jump ldate2_2
+
+        "Tea":
+            jump ldate2_2
+
+        "Energy Drink":
+            jump ldate2_2
+
+        "Coffee":
+            jump ldate2_2
+
+        "Wine?":
+            jump ldate2_2
+
+
+# put number based on where at atm
+label ldate2_
+
         
 
 
 
 
 
-        nar "Programmer Has a nap! Hold Out! Programer!"
+
+
+
+
+
+
+
+
+#p Ghosty Park Date! Date 2!
+
+label sdate2_1:
+    scene error
+    pause
 
 
 
@@ -2080,3 +2128,5 @@ label end:
 
         l "Nice try. Don't you think that might get a little confusing?"
         jump passbeta
+
+        #w end of beta code
