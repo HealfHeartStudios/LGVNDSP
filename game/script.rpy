@@ -1829,7 +1829,8 @@ label ldate2_3
     hide lara blush smile
     show lara blush
     l "You have NO idea how hot those uniforms get."
-
+    nar "I have an idea of how hot they look..."
+    l "Anyways, shall we walk?"
     scene error
     pause
 
@@ -1841,9 +1842,11 @@ label ldate2_3
         "Which drink should I pick?"
 
         "Water":
+            
             jump ldate2_2
 
         "Soda": 
+            
             jump ldate2_2
 
         "Milk":
