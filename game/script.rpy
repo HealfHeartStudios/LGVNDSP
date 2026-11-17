@@ -1831,8 +1831,8 @@ label ldate2_3
     l "You have NO idea how hot those uniforms get."
     nar "I have an idea of how hot they look..."
     l "Anyways, shall we walk?"
-    scene error
-    pause
+
+    #continue text here
 
 
 
@@ -1842,31 +1842,43 @@ label ldate2_3
         "Which drink should I pick?"
 
         "Water":
-            
-            jump ldate2_2
+            nar "It may be the basic choice, but I'm sure its something she will be okay with."
+            jump ldate2_10
 
         "Soda": 
-            
-            jump ldate2_2
+            nar "Everyone loves Cola right?"
+            $ lara_love = lara_love + 2
+            jump ldate2_10
 
         "Milk":
-            jump ldate2_2
+            nar "Some nice cold milk Might wake her up a little."
+            $ lara_love = lara_love - 1
+            jump ldate2_10
 
         "Tea":
-            jump ldate2_2
+            nar "Tea has always made me feel better when I'm exhausted."
+            $ lara_love = lara_love + 1
+            jump ldate2_10
 
         "Energy Drink":
-            jump ldate2_2
+            nar "An energy drink will for sure wake her up."
+            $ lara_love = lara_love + 2
+            jump ldate2_10
 
         "Coffee":
-            jump ldate2_2
+            nar "Coffee will forsure give her some energy."
+            $ lara_love = lara_love - 3
+            jump ldate2_10
 
         "Wine?":
-            jump ldate2_2
+            nar "This is too strange to pass up."
+            jump ldate2_10
 
+label ldate2_10:
+    nar "I grab the drink from the catch in the bottom of the machine before making my way back over to the bench."
 
-# put number based on where at atm
-label ldate2_00000:
+    scene error
+    pause
 
         
 
@@ -1920,11 +1932,12 @@ label sdate2_1:
 
 
 #w Ending of the game, put credits here in the future!
-label end:
-    #y__________________________Text For Valentines Demo_______________________________________
+ #y__________________________Text For Valentines Demo2_______________________________________
     scene message with dissolve
-    l "This concludes the Valentines test demo."
-    l "We here at HHS hope you enjoyed what's been presented. It's not much but this was a few months of learning and work"
+    nar "This concludes the second Valentines test demo."
+    nar "Thank you so much for testing out the new dates, please send any feedback you have to @sm_pai or put it in the GAL channel in the discord server."
+
+    
     g "I'm sure they enjoyed what you 'Presented' to them on the bed."
     l "..."
     l_whisper"... I'm going to ignore that."
@@ -1941,6 +1954,8 @@ label end:
         l "Try naming yourself 'Mlzrt' or 'Daddy'"
         l "Okay. thank you for playing my route! Love you~! B-bye!"
     scene black with dissolve
+label end:
+   
     #r this ends the game do not add anything after this point.
     return
 #y ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2198,3 +2213,26 @@ label end:
         jump passbeta
 
         #w end of beta code
+
+
+        #w adding old code that is no longer needed here for reference and historical
+         #y__________________________Text For Valentines Demo 1_______________________________________
+    scene message with dissolve
+    l "This concludes the Valentines test demo."
+    l "We here at HHS hope you enjoyed what's been presented. It's not much but this was a few months of learning and work"
+    g "I'm sure they enjoyed what you 'Presented' to them on the bed."
+    l "..."
+    l_whisper"... I'm going to ignore that."
+    l "Hopefully from this point on development time will be far faster as SM understands MOSTLY how the engine works."
+    l "Anyways. Keep in mind nothing was final and it all still needs polish, but please report any major issues, thoughts, or suggestions to SM_pai as well as if you would like to be sent future demos."
+    #y -----------------------------------------------------------------------------------------
+    nar "Please send a screen shot of this text box to @SM_pai. Lara love is [lara_love]. Ghosty love is [ghosty_love]. Lara date count is [lara_date_count]. Ghosty date count is [ghosty_date_count]. "
+    nar "Thank you for playing<3! Tester can now has a nap. Rest Well! Tester!"
+    nar "..."
+    if lara_date_count >= ghosty_date_count:
+        l "Psst... Hey you still there [povname] ?"
+        l "There's a lot of name easter eggs to find!"
+        l "Here are 2 of the most interesting ones. Sm told me to tell you about them."
+        l "Try naming yourself 'Mlzrt' or 'Daddy'"
+        l "Okay. thank you for playing my route! Love you~! B-bye!"
+    scene black with dissolve
