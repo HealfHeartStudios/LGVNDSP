@@ -1831,7 +1831,8 @@ label ldate2_3
     l "You have NO idea how hot those uniforms get."
     nar "I have an idea of how hot they look..."
     l "Anyways, shall we walk?"
-
+    scene parkd2 with dissolve
+    nar "The park is far more beautiful than I remember it being, or maybe I've just never taken the time to truly look around."
     #continue text here
 
 
@@ -1876,6 +1877,7 @@ label ldate2_3
 
 label ldate2_10:
     nar "I grab the drink from the catch in the bottom of the machine before making my way back over to the bench."
+    nar ""
 
     scene error
     pause
